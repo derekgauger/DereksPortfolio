@@ -1,11 +1,10 @@
 import axios from "axios";
 import { EmailSettings } from "../Types/types";
-
-const API_URL = "http://localhost:5084/api/Email/send-email";
+import { API_URL } from "./config";
 
 export const sendEmail = async(emailData : EmailSettings) => {
   try {
-      const response = await axios.post(API_URL, emailData, {
+      const response = await axios.post(API_URL + "/Email/send-email", emailData, {
       });
       return {data: response.data, error: null}
   } catch (error) {

@@ -1,5 +1,6 @@
 import axios from "axios";
 import { ExperienceGroupType, ExperienceSection } from "../Types/types";
+import { API_URL } from "./config";
 
 type WorkExperienceData = {
   title: string;
@@ -9,11 +10,9 @@ type WorkExperienceData = {
   bulletPoints: string[];
 };
 
-const API_URL = "http://localhost:5084/api/WorkExperience";
-
 export async function fetchWorkExperienceData() {
   try {
-    const response = await axios.get(API_URL);
+    const response = await axios.get(API_URL + "/WorkExperience");
     return formatWorkExperienceToExperience(response.data);
   } catch (error) {
     console.error("Error fetching projects:", error);

@@ -1,10 +1,9 @@
 import axios from 'axios';
-
-const API_URL = 'http://localhost:5084/api/Profile';
+import { API_URL } from "./config";
 
 export async function fetchProfile() {
   try {
-    const response = await axios.get(API_URL);
+    const response = await axios.get(API_URL + "/Profile");
     return response.data;
   } catch (error) {
     console.error('Error fetching projects:', error);

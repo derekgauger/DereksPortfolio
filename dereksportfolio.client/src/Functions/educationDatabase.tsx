@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { ExperienceGroupType, ExperienceSection } from '../Types/types';
+import { API_URL } from './config.ts';
 
 type EducationData = {
   title: string;
@@ -9,11 +10,9 @@ type EducationData = {
   bulletPoints: string[];
 }
 
-const API_URL = 'http://localhost:5084/api/Education';
-
 export async function fetchEducationData() {
   try {
-    const response = await axios.get(API_URL);
+    const response = await axios.get(API_URL + "/Education");
     return formatEducationToExperience(response.data);
   } catch (error) {
     console.error('Error fetching projects:', error);
