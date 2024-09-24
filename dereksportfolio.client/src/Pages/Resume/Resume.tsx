@@ -39,7 +39,7 @@ const Resume: React.FC = () => {
         <div className='container mx-auto'>
             <PageHeader 
                 title='Experiences' 
-                description='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                description='Welcome to my experiences page! Here you can learn more about my education and professional experience.'
             />
             <div className='flex flex-col flex-wrap md:flex-row'>
                 <div className='flex flex-col flex-1'>

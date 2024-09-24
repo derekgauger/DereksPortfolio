@@ -51,3 +51,5 @@ C:\Users\Derek\source\repos\DereksPortfolio\DereksPortfolio.Server\bin\Debug\net
 C:\Users\Derek\source\repos\DereksPortfolio\DereksPortfolio.Server\bin\Debug\net8.0\myworkdata.json
 C:\Users\Derek\source\repos\DereksPortfolio\DereksPortfolio.Server\bin\Debug\net8.0\myskillsdata.json
 C:\Users\Derek\source\repos\DereksPortfolio\DereksPortfolio.Server\bin\Debug\net8.0\mysummarydata.json
+C:\Users\Derek\source\repos\DereksPortfolio\DereksPortfolio.Server\bin\Debug\net8.0\myprofiledata.json
+C:\Users\Derek\source\repos\DereksPortfolio\DereksPortfolio.Server\obj\Debug\net8.0\DereksPortfolio.Server.sourcelink.json

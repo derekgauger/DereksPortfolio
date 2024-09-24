@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
         <div className='container mx-auto'>
             <PageHeader 
                 title='Projects' 
-                description='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                description='Welcome to my projects page! Here you can learn more about the projects I have worked on and am currently working on. Hovering over each picture will give you an option to learn more about the project.'
             />
             <ProjectDisplay/>
             <Footer 

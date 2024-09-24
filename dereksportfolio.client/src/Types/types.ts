@@ -60,3 +60,22 @@ export type EmailSettings = {
     subject: string;
     body: string;
 }
+
+export type ContentType = {
+    website: string;
+    phone: string;
+    city: string;
+    degree: string;
+    email: string;
+    freelance: string;
+    favorite_coding_language: string;
+    favorite_food: string;
+}
+
+export type ProfileType = {
+    image: string;
+    title: string;
+    description1: string;
+    description2: string;
+    content: ContentType;
+}

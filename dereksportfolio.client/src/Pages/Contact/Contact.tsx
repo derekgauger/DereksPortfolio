@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
     <div className="container mx-auto">
       <PageHeader
         title="Contact"
-        description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description="Welcome to my contact page! Please send me an email. I setup my own email service for this website and would love for it to be used. Include any feedback or questions you have about me or the website."
       />
       <div className="flex mt-8 flex-col md:flex-row">
         <div className="flex-1">

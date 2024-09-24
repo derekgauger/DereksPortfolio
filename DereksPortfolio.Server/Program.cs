@@ -1,5 +1,6 @@
 using MongoDB.Driver;
 using MongoDbProject.Core.Data;
+using MongoDbProject.Core.Models;
 using MongoDbProject.Core.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +22,7 @@ builder.Services.AddScoped<ProjectRepository>();
 builder.Services.AddScoped<EducationRepository>();
 builder.Services.AddScoped<WorkExperienceRepository>();
 builder.Services.AddScoped<SkillRepository>();
+builder.Services.AddScoped<ProfileRepository>();
 
 builder.Services.AddScoped<EmailService>();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));

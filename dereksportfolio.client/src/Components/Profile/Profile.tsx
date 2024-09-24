@@ -17,6 +17,14 @@ const Profile: React.FC<ProfileProps> = ({
   description2,
   content,
 }) => {
+  const formattedContent = Object.entries(content).reduce((acc, [key, value]) => {
+    const alternateDisplayName = key
+      .split("_")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+    acc[alternateDisplayName] = value;
+    return acc;
+  }, {} as { [key: string]: string });
   return (
     <div className={`flex flex-col md:flex-row text-white`}>
       <div className="md:w-1/3 mb-8 md:mb-0 flex items-center justify-center">
@@ -34,7 +42,7 @@ const Profile: React.FC<ProfileProps> = ({
         <h1 className="text-3xl font-bold mb-4">{title}</h1>
         <p className="mb-4 italic text-wrap">{description1}</p>
         <div className="grid grid-cols-2 gap-4 mb-4">
-          {Object.entries(content).map(([key, value]) => (
+          {Object.entries(formattedContent).map(([key, value]) => (
             <div key={key} className="flex items-center">
               <span className="text-green-500 mr-2">›</span>
               <span className="font-semibold mr-2">{key}:</span>

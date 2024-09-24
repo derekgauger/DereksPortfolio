@@ -1,0 +1,18 @@
+[
+  {
+    "Image": "https://i.imgur.com/s5UW3XZ.png",
+    "Title": "Software Engineer and Web Developer",
+    "Description1": "I am a software engineer from the Milwaukee, Wisconsin area. I've stayed in this area my entire life. I've got a passion for learning new technology and creating fun projects.",
+    "Description2": "If you have any questions or would like to work together, feel free to reach out to me! I'm always looking for new opportunities to learn and grow. I'm available for freelance work specializing in Python automation, Minecraft plugins, or website creation.",
+    "Content": {
+      "Favorite Coding Language": "Python",
+      "Website": "www.derekgauger.dev",
+      "Phone": "(262) 581-7793",
+      "City": "Milwaukee, WI",
+      "Favorite Food": "Steak Tacos on Corn Tortillas Only Cheese",
+      "Degree": "Bachelor of Science",
+      "Email": "gaugerderek@gmail.com",
+      "Freelance": "Available"
+    }
+  }
+]

@@ -29,6 +29,7 @@ import {
   SiDotnet,
   SiRedux,
   SiTailwindcss,
+  SiMicrosoftazure
 } from "react-icons/si";
 
 const iconMappings: { [key: string]: IconType } = {
@@ -59,6 +60,7 @@ const iconMappings: { [key: string]: IconType } = {
   windows: FaWindows,
   java: FaJava,
   tailwind: SiTailwindcss,
+  azure: SiMicrosoftazure
 };
 
 export const mapNameToIcon = (name: string): IconType => {
