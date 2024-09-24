@@ -22,7 +22,6 @@ export async function fetchSkills() {
 }
 
 const convertSkillsFromDB = (data: SkillsFromDB[]) => {
-  console.log(data);
   const skills : Skill[] = [];
   data.map((skill: SkillsFromDB) => {
     const newSkill : Skill = {

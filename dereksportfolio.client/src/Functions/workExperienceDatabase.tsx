@@ -20,7 +20,6 @@ export async function fetchWorkExperienceData() {
   }
 }
 const formatWorkExperienceToExperience = (data: WorkExperienceData[]) => {
-  console.log("Work experience", data);
   const formattedData: ExperienceGroupType = {
     title: "Professional Experience",
     sections: [],

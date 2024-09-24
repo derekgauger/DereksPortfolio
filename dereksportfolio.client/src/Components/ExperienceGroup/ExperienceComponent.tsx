@@ -7,7 +7,6 @@ interface ExperienceComponentProps {
 }
 
 const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ sections }) => {
-    console.log(sections[0].description)
   return (
     <div className=''>
         {sections.map((section : ExperienceSection, index : number) => (

@@ -20,7 +20,6 @@ export async function fetchEducationData() {
   }
 }
 const formatEducationToExperience = (data : EducationData[]) => {
-  console.log("Educ", data);
   const formattedData : ExperienceGroupType = {
     title: 'Education',
     sections: []

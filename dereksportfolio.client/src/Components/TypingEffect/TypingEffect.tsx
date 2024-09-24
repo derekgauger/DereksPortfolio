@@ -16,7 +16,6 @@ const TypingEffect: React.FC<TypingEffectProps> = ({ prefix, wordList }) => {
     if (shouldUpdateIndex) {
       setWordIndex((prevIndex) => {
         const nextIndex = (prevIndex + 1) % wordList.length;
-        console.log(`Word index updated: ${prevIndex} -> ${nextIndex}`);
         return nextIndex;
       });
       setShouldUpdateIndex(false);
@@ -24,7 +23,6 @@ const TypingEffect: React.FC<TypingEffectProps> = ({ prefix, wordList }) => {
   }, [wordList.length, shouldUpdateIndex]);
 
   useEffect(() => {
-    console.log(`Current word index: ${wordIndex}, Word: ${wordList[wordIndex]}`);
     const currentWord = wordList[wordIndex];
     
     const handleTyping = () => {
