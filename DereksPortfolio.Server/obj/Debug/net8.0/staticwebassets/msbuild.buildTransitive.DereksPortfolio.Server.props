@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\DereksPortfolio.Server.props" />
+</Project>

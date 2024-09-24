@@ -1,0 +1,105 @@
+[
+  {
+    "Title": "Truth",
+    "Category": "Discord Bot",
+    "Images": ["insert images here"],
+    "PageDescription": "Truth is a discord bot that messages the national days, fun facts, and holidays and for the current day to a Discord channel. It will message the channel at 6:00 AM CST every day. There are currently 100+ Discord servers using the bot. Originally, the bot was made for an entirely different reason, so that is why the name is Truth instead of something more fitting.",
+    "Description": "This bot was primarily made using JavaScript with Discord.js and Node.js. However, Python is used to scrape the information from a few different websites. The bot is hosted on an AWS EC2 Instance running linux and uses AWS DynamoDB to store the server data such as server ids, channel numbers, and the server's name. The EC2 instance runs a cron job that runs a Python script for web scrapping at 5:59. It will store the data locally (overwritting the pervious data). Then, using the Cron Node.js package, the bot will read that local data and send it to each of the servers. I had problems with Node.js not staying alive long enough, it would go down after a few hours, so I utilized a package called PM2 in linux to keep the bot alive while the instance was not connected to.",
+    "Tags": [
+      { "Name": "Discord Bot", "Category": "Type" },
+      { "Name": "JavaScript", "Category": "Language" },
+      { "Name": "Python", "Category": "Language" },
+      { "Name": "Cron", "Category": "Package" },
+      { "Name": "PM2", "Category": "Package" },
+      { "Name": "Discord.js", "Category": "Library" },
+      { "Name": "Node.js", "Category": "Library" },
+      { "Name": "AWS EC2", "Category": "Cloud" },
+      { "Name": "AWS DynamoDB", "Category": "Database" }
+    ],
+    "DetailsUrl": "/projects/truth",
+    "Urls": [
+      { "Name": "GitHub", "Url": "https://github.com/derekgauger/truth_discord_bot" },
+      { "Name": "Add to Server", "Url": "https://discord.com/oauth2/authorize?client_id=929121472138604614&permissions=274878220352&scope=bot%20applications.commands" },
+      { "Name": "Privacy Policy", "Url": "https://derekgauger.dev/projects/truth/privacy-policy" },
+      { "Name": "Terms of Service", "Url": "https://derekgauger.dev/projects/truth/terms-of-service" }
+    ]
+  },
+  {
+    "Title": "Portfolio Website",
+    "Category": "Website",
+    "Images": ["insert images here"],
+    "PageDescription": "This is the portfolio website you are currently on. It was made to help showcase my work and practice my skills with web development, design, and architecture. The website is designed to be responsive and accessible, ensuring a good user experience across different devices and screen sizes. This website has been redesigned 4 times now.",
+    "Description": "insert description here",
+    "Tags": [
+      { "Name": "Website", "Category": "Type" },
+      { "Name": "HTML", "Category": "Language" },
+      { "Name": "CSS", "Category": "Language" },
+      { "Name": "JavaScript", "Category": "Language" },
+      { "Name": "TypeScript", "Category": "Language" },
+      { "Name": "React.js", "Category": "Library" },
+      { "Name": "Node.js", "Category": "Library" },
+      { "Name": "MongoDB", "Category": "Database" },
+      { "Name": ".NET", "Category": "Framework" }
+    ],
+    "DetailsUrl": "/projects/portfolio-website",
+    "Urls": [
+      { "Name": "GitHub", "Url": "https://github.com/derekgauger/dereks-portfolio" },
+      { "Name": "Website URL", "Url": "https://derekgauger.dev" }
+    ]
+  },
+  {
+    "Title": "Biscus",
+    "Category": "Discord Bot",
+    "Images": ["insert images here"],
+    "PageDescription": "Biscus is a Discord bot that allow users to subscribe to stylized notifications of Twitch streamers going live. It also has functionality for getting a random streamer currently streaming a specified game within a certain viewer count range. This bot was made as a passion project because a few friends were streaming at the time. The name Biscus comes from the word 'Biscuits'.",
+    "Description": "insert description here",
+    "Tags": [
+      { "Name": "Discord Bot", "Category": "Type" },
+      { "Name": "JavaScript", "Category": "Language" },
+      { "Name": "Python", "Category": "Language" },
+      { "Name": "Cron", "Category": "Package" },
+      { "Name": "PM2", "Category": "Package" },
+      { "Name": "Discord.js", "Category": "Library" },
+      { "Name": "Twitch API", "Category": "External API" },
+      { "Name": "Node.js", "Category": "Library" },
+      { "Name": "AWS EC2", "Category": "Cloud" },
+      { "Name": "AWS DynamoDB", "Category": "Database" }
+    ],
+    "DetailsUrl": "/projects/biscus",
+    "Urls": [
+      { "Name": "GitHub", "Url": "https://github.com/derekgauger/biscus_discord_bot" }
+    ]
+  },
+  {
+    "Title": "Economy Blocks",
+    "Category": "Minecraft Plugin",
+    "Images": ["insert images here"],
+    "PageDescription": "Economy Blocks is a Minecraft plugin that allows players to sell items in game to buy crates that you can open for rewards or destruction. It's a gamble. The plugin was made for a Minecraft server I was hosting that my friends played on. The goal was to increase the time players spent playing Minecraft. Everyone knows about the urge to play Minecraft once a year for about 1 week. My goal was to add an extra week or two with new functionality. We ended up playing it for about a month before closing the server down.",
+    "Description": "insert description here",
+    "Tags": [
+      { "Name": "Minecraft Plugin", "Category": "Type" },
+      { "Name": "Java", "Category": "Language" },
+      { "Name": "Spigot", "Category": "Library" },
+      { "Name": "Maven", "Category": "Package" }
+    ],
+    "DetailsUrl": "/projects/economy-blocks",
+    "Urls": [
+      { "Name": "GitHub", "Url": "https://github.com/derekgauger/Economy-Blocks" }
+    ]
+  },
+  {
+    "Title": "Python Utility Library",
+    "Category": "Library",
+    "Images": ["insert images here"],
+    "PageDescription": "The Python utility library was created to practice my Python skills and learn about data structures and algorithms. The library contains a variety of functions and classes that can be used in Python projects. The library is open source and available on GitHub. It is an ongoing project, and I plan to add more functions in the future.",
+    "Description": "insert description here",
+    "Tags": [
+      { "Name": "Library", "Category": "Type" },
+      { "Name": "Python", "Category": "Language" }
+    ],
+    "DetailsUrl": "/projects/python-utility-library",
+    "Urls": [
+      { "Name": "GitHub", "Url": "https://github.com/derekgauger/python_util_library" }
+    ]
+  }
+]

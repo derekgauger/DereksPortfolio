@@ -1,0 +1,40 @@
+[
+  {
+    "Title": "Software Engineer 2",
+    "DateRange": "2024 - Present",
+    "Location": "Astronautics Corporation of America, Oak Creek, Wisconsin",
+    "Description": "I am currently working as a full-stack software engineer with a focus on front-end development. I work on a team of 5+ developers to implement new features and maintain existing features. The majority of my time is spent working with React, Node.js, and front-end technologies. Here are some of my responsibilities:",
+    "BulletPoints": [
+      "Interpret and develop new features requested by the customer while coordinating with the quality assurance and testing teams.",
+      "Perform manual end-to-end, performance, acceptance, functional, and regression tests while recording results and generating new backlog items as necessary.",
+      "Debug RESTful APIs and Postgres database queries in Go and SQL respectively.",
+      "Design new reusable components to remove technical debt and improve user experience across all aspects of the website.",
+      "Coordinate with multiple teams in the company to relay requirements, statuses, and updates.",
+      "Mentor junior developers and conduct code reviews to ensure best practices are followed."
+    ]
+  },
+  {
+    "Title": "Software Engineer 1",
+    "DateRange": "2023 - 2024",
+    "Location": "Astronautics Corporation of America, Oak Creek, Wisconsin",
+    "Description": "While I was a software engineer 1, I worked on a team of 5+ developers. I was responsible for implementing and maintaining features using C programming, project documentation, and writing Python tests for test automation. Here are some of my responsibilities:",
+    "BulletPoints": [
+      "Authored high-level requirements that would then be turned into features.",
+      "Developed low-level test cases and procedures using Python to verify the Aircraft FDIMU software.",
+      "Created tools to save time with tedious processes such as results entry, result review, documentation, and requirement to test case linking. (Websites, IBM DOORS Integrated Programs, Python scripts)",
+      "Used Azure DevOps to create CI/CD pipelines for running automated Python tests overnight.",
+      "Implemented complex algorithms for comparing XML configuration files to their corresponding binary versions."
+    ]
+  },
+  {
+    "Title": "Software Engineering Intern",
+    "DateRange": "2021 - 2023",
+    "Location": "Astronautics Corporation of America, Oak Creek, Wisconsin",
+    "Description": "As a software engineering intern, I worked on a team of 5+ developers. I was responsible for writing Python verification tests and developing tools/pipelines to save the team time. Here are some of my responsibilities:",
+    "BulletPoints": [
+      "Designed, developed, and maintained Python libraries used for verification of the Aircraft's FDIMU software.",
+      "Implemented Continuous Integration (CI/CD) pipelines in Azure for running tests, code formatters, and hardware/software smoke tests.",
+      "Learned how to program using IBM DOORS' custom language DXL to make automated programs we could run on our requirements and test cases."
+    ] 
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "Title": "Bachelor of Science in Software Engineering",
+    "Category": "Education",
+    "DateRange": "2019-2023",
+    "Location": "Milwaukee School of Engineering, Milwaukee, Wisconsin",
+    "Description": "<p>Recent graduate from the Milwaukee School of Engineering with a Bachelor of Science in Software Engineering, achieving a GPA of 3.52. Throughout my studies, I engaged in numerous projects and completed a two-year internship at Astronautics, where I practiced and applied my skills to real-world challenges. I participated in the club swimming team. My education at MSOE has equipped me with a strong foundation in software engineering principles, effectively preparing me for success in the industry. Since then, I've continued education myself via personal projects and online courses.</p>"
+  },
+  {
+    "Title": "High School Diploma",
+    "Category": "Education",
+    "DateRange": "2015-2019",
+    "Location": "Elkhorn Area High School, Elkhorn, Wisconsin",
+    "Description": "<p>High school graduate from Elkhorn Area High School, class of 2019, with a strong foundation in software development. My journey in programming began with Python and Java, alongside cybersecurity concepts. I was a dedicated member of the swim team for all four years, achieving state qualifications in my junior and senior years and contributing to a relay team that ranked third in the state. Throughout my high school career, I emphasized math, science, and computer classes to further my interest in the field of software engineering.</p>"
+  }
+]

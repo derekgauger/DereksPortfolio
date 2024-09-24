@@ -1,0 +1,7 @@
+h1::first-line {
+    line-height: 1;
+}
+
+.leading-change::first-line {
+    line-height: 1;
+}

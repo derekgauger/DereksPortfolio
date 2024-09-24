@@ -1,0 +1,17 @@
+@keyframes carousel {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-carousel {
+    animation: carousel 60s linear infinite;
+    animation-play-state: paused;
+  }
+  
+  .carousel-container:hover .animate-carousel {
+    animation-play-state: running;
+  }

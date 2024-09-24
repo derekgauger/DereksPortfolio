@@ -1,0 +1,191 @@
+[
+  {
+    "Name": "React.js",
+    "Years": 4,
+    "IconName": "react",
+    "Description": "I started with React in college and have been using it ever since. It is my go to library for frontend development. This website was made using react. I have had a great opportunity to work with it in my profession too. For my personal projects, I've built 5+ websites and applications using React.",
+    "Category": "Frontend"
+  },
+  {
+    "Name": "Node.js",
+    "Years": 4,
+    "IconName": "node",
+    "Description": "I started using Node in college along side React. It is how I became aware of both of these technologies. Most of my personal projects use Node for hosting the frontend or backend. I've built Discord Bots, Websites, and APIs using Node. I also use Node in my professional work environment for web hosting.",
+    "Category": "Backend"
+  },
+  {
+    "Name": "HTML",
+    "Years": 5,
+    "IconName": "html",
+    "Description": "HTML is the starting language for all web development. I've been using it for 5 years now. I've used HTML for building websites, making emails look nicer, and generating user friendly documentation. This website was built using React, but all of the components use base HTML. No external libraries were used for the HTML components.",
+    "Category": "Frontend"
+  },
+  {
+    "Name": "CSS",
+    "Years": 5,
+    "IconName": "css",
+    "Description": "I've been using CSS for as long as I've been doing HTML. I've gotten pretty good at making things look and feel how I imagine. I use this in my professional work and personal projects. All of my websites have been styled using CSS/Tailwind.",
+    "Category": "Frontend"
+  },
+  {
+    "Name": "TailwindCSS",
+    "Years": 1,
+    "IconName": "tailwind",
+    "Description": "I use TailwindCSS in all of my website projects now. I primarily used CSS for 4 years before I learned about Tailwind. I am able to do styling much faster now. I've only been using it for a year on my own projects, but my experience with CSS has made it very easy to learn and use.",
+    "Category": "Frontend"
+  },
+  {
+    "Name": "JavaScript",
+    "Years": 5,
+    "IconName": "javascript",
+    "Description": "Along side HTML and CSS, I've been working with JavaScript for 5 years. I've used it for building websites, Discord Bots, and APIs. I've used it in my professional work and personal projects.",
+    "Category": "Frontend"
+  },
+  {
+    "Name": "TypeScript",
+    "Years": 2,
+    "IconName": "typescript",
+    "Description": "I have converted to using primarily TypeScript for my web development project now. I originally was using JavaScript, but I found that TypeScript forced/allowed me to write cleaner, more readable code. I use TypeScript in my professional work and in my personal projects.",
+    "Category": "Frontend"
+  },
+  {
+    "Name": "Java",
+    "Years": 8,
+    "IconName": "java",
+    "Description": "Java was the second language I learned after Python. I've used it for building Android applications, desktop applications, and Minecraft plugins. I used Java all throughout high school and college. Currently, I use it to develop and maintain Minecraft plugins for my friends and customers.",
+    "Category": "Backend"
+  },
+  {
+    "Name": "C#",
+    "Years": 1,
+    "IconName": "csharp",
+    "Description": "I learned C# so that I could better understand the .NET framework. I've used it for building .NET Web APIs. I've only been using it for a year, but it is my go to language building out a API backend.",
+    "Category": "Backend"
+  },
+  {
+    "Name": "Python",
+    "Years": 8,
+    "IconName": "python",
+    "Description": "Python was the first language I learned in high school. I continued using Python in college for classes like algorithms and network protocols. I've used Python for automation, testing, desktop applications, and web scraping. Python is the language I've used the most in my professional work due to me being on the verification team for an embedded system.",
+    "Category": "Backend"
+  },
+  {
+    "Name": "C",
+    "Years": 3,
+    "IconName": "c",
+    "Description": "I've had 3 years of experience reading, debugging, and writing C code. I've used C for implementing new features and fixing bugs in an embedded system. I've used C in my professional work and in college for classes such as operating systems and real-time systems.",
+    "Category": "Backend"
+  },
+  {
+    "Name": "C++",
+    "Years": 3,
+    "IconName": "Along side C, I've been working with C++ for 3 years. I've used C++ for classes in college such as competitive programming. I also use C++ for developing games using Unreal Engine as a hobby.",
+    "Description": "insert description here",
+    "Category": "Backend"
+  },
+  {
+    "Name": "Git",
+    "Years": 5,
+    "IconName": "git",
+    "Description": "Git is the main versioning tool I use. I started using Git in college and have been using it ever since. I store all of my personal projects on GitHub and use Git in my professional work.",
+    "Category": "Tools"
+  },
+  {
+    "Name": "Redux",
+    "Years": 1,
+    "IconName": "redux",
+    "Description": "I learned redux so that I could learn more about React and how to manage state in a larger application. I've only used Redux in my personal projects, but I've found some cases for using it in my professional work.",
+    "Category": "Library"
+  },
+  {
+    "Name": "SQL",
+    "Years": 3,
+    "IconName": "sql",
+    "Description": "SQL was the first database language I learned. I've used SQL for building databases, querying databases, and maintaining databases. I've used SQL in my professional work and in my personal projects.",
+    "Category": "Database"
+  },
+  {
+    "Name": "MySQL",
+    "Years": 3,
+    "IconName": "mysql",
+    "Description": "MySQL was the first database I learned how to use. I've used MySQL for storing data in Mobile apps, Minecraft Plugins, and Websites. I've only used MySQL for school and personal projects.",
+    "Category": "Database"
+  },
+  {
+    "Name": "SQLite",
+    "Years": 1,
+    "IconName": "sqlite",
+    "Description": "I learned SQLite so that I could learn more about database and how to use them in a mobile application. I used SQLite in my college classes such as mobile app development and in my personal projects for a customer.",
+    "Category": "Database"
+  },
+  {
+    "Name": "PostgreSQL",
+    "Years": 1,
+    "IconName": "postgresql",
+    "Description": "I used PostgreSQL for my professional work. It is used for storing data for a web application. I've only used PostgreSQL for a year, but I have found it to be very simple to learn and similar to other databases.",
+    "Category": "Database"
+  },
+  {
+    "Name": "MariaDB",
+    "Years": 1,
+    "IconName": "mariadb",
+    "Description": "I learned MariaDB so that I could learn more about databases and how to use them. I was doing freelancing for Minecraft plugins and the customer wanted to use a combination of MariaDB, MySQL, and SQLite. I made them a configuration file so th at they could easily use any one of them.",
+    "Category": "Database"
+  },
+  {
+    "Name": "MongoDB",
+    "Years": 4,
+    "IconName": "mongodb",
+    "Description": "MongoDB is one of my favorite database. I learned MongoDB around the same time I learned how to use React. I've used MongoDB primarily for storing data for websites and APIs. I've used MongoDB in my personal projects and during my college courses.",
+    "Category": "Database"
+  },
+  {
+    "Name": "DynamoDB",
+    "Years": 2,
+    "IconName": "dynamodb",
+    "Description": "I learned DynamoDB as part of my personal Discord Bot projects. I needed a database that could store server information and be easily accessed by the bot. Since the applications were being hosted on AWS, I decided to use DynamoDB. I've been storing my server data in there for 2 years now.",
+    "Category": "Database"
+  },
+  {
+    "Name": "EC2",
+    "Years": 2,
+    "IconName": "ec2",
+    "Description": "I use EC2 to host my Discord Bots. I learned EC2 as part of my personal Discord Bot projects. I needed a server that could run 24/7 and be easily accessed by the bot. Since the applications were being hosted on AWS, I decided to use EC2. I've been hosting my bots on EC2 for 2 years now.",
+    "Category": "Cloud"
+  },
+  {
+    "Name": "Go",
+    "Years": 1,
+    "IconName": "go",
+    "Description": "I was put on a project that was using Go for the backend APIs. I has never used it before, but I found it to be pretty similar to the other languages I know. I've only been using Go for about a year now in a professional setting.",
+    "Category": "Backend"
+  },
+  {
+    "Name": "Express",
+    "Years": 4,
+    "IconName": "express",
+    "Description": "Express is one of my favorite backend frameworks. I learned Express around the same time I learned how to use Node. I've used Express for building APIs and websites. I've only used Express in my personal projects while trying to understand the MERN stack.",
+    "Category": "Backend"
+  },
+  {
+    "Name": ".NET",
+    "Years": 1,
+    "IconName": "dotnet",
+    "Description": "I learned .NET so that I could better understand the C# language. I've used .NET for building .NET Web APIs. I've only been using it for a year, but it is my go to framework building out a API backend.",
+    "Category": "Backend"
+  },
+  {
+    "Name": "Linux",
+    "Years": 5,
+    "IconName": "linux",
+    "Description": "I got my first bit of experience using Linux my freshman year of college. I've been using Linux for 5 years now. I use Linux for hosting my Discord Bots and regularly in my professional experience. I used Linux every day for about 3 years while working on the embedded systems projects at Astronautics.",
+    "Category": "DevOps"
+  },
+  {
+    "Name": "Windows",
+    "Years": 15,
+    "IconName": "windows",
+    "Description": "I've been using windows since as long as I can remember. My family had 1 computer in the house and it was Windows. I use Windows for gaming, college courses, personal projects, and professional work.",
+    "Category": "Tools"
+  }
+]
