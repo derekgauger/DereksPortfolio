@@ -57,11 +57,10 @@ app.UseCors(builder =>
         .AllowAnyHeader();
 });
 
-// Make sure CORS is before these
 app.UseAuthentication();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
-// app.MapFallbackToFile("/index.html");
+app.MapFallbackToFile("/index.html");
 
 app.Run();

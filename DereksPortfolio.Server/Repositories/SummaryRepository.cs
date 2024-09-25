@@ -1,5 +1,5 @@
-using DereksPortfolio.Server.Models;
 using MongoDB.Driver;
+using MongoDbProject.Core.Models;
 
 namespace MongoDbProject.Core.Repositories
 {

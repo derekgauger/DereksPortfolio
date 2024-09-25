@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DereksPortfolio.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c2b25fe5f2761c0b90166547a63fc4937e448d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b31c2fa376f6ce3afe9eafa4bfc56d10c8df854e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DereksPortfolio.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DereksPortfolio.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

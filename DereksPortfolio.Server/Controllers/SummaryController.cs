@@ -1,5 +1,4 @@
 
-using DereksPortfolio.Server.Models;
 using Microsoft.AspNetCore.Mvc;
 using MongoDbProject.Core.Models;
 using MongoDbProject.Core.Repositories;
@@ -18,10 +17,10 @@ namespace MongoDbProject.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Summary>>> GetSummary()
+        public async Task<ActionResult<Summary>> GetSummary()
         {
-          var projects = await _repository.GetSummaryAsync();
-          return Ok(projects);
+          var summary = await _repository.GetSummaryAsync();
+          return Ok(summary);
         }
     }
 }
