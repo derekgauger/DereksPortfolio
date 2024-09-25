@@ -51,10 +51,13 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors(builder =>
 {
-    builder.AllowAnyOrigin()
-           .AllowAnyMethod()
-           .AllowAnyHeader();
+    builder
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader();
 });
+
+// Make sure CORS is before these
 app.UseAuthentication();
 app.UseHttpsRedirection();
 app.UseAuthorization();
