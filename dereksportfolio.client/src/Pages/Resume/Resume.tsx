@@ -34,16 +34,7 @@ const Resume: React.FC = () => {
         fetchData();
     }, []);
 
-    // const summary: ExperienceGroupType = {
-    //     title: 'Summary',
-    //     sections: [
-    //         {
-    //             title: "Derek Gauger Profile",
-    //             description: "Professional software engineer with skills in both web development and embedded systems. Experienced in application development, verification, automation, and code maintenance. Actively working on personal projects to enhance my skills. Worked on many teams using Agile Methodologies with various tech stacks and environments. Proven record of continuous improvement and reliability.",
-    //         },
-    //     ]
-    // }
-
+    
     if (isLoading) {
         return <LoadingIcon/>;
     }

@@ -1,4 +1,3 @@
-import path from "path";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
