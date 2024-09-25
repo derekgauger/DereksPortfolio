@@ -56,12 +56,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               >
                 <FaInfoCircle />
               </button>
-              <button
-                className="p-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 tooltip"
-                data-tooltip="View Fullscreen"
-              >
-                <FaExpand />
-              </button>
             </div>
           </div>
         </div>
