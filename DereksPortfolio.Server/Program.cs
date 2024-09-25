@@ -29,6 +29,16 @@ builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("Emai
 
 var app = builder.Build();
 
+app.Use(async (context, next) =>
+{
+    await next();
+    if (context.Response.StatusCode == 404 && !Path.HasExtension(context.Request.Path.Value))
+    {
+        context.Request.Path = "/index.html";
+        await next();
+    }
+});
+
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
@@ -45,7 +55,7 @@ app.UseCors(builder =>
            .AllowAnyMethod()
            .AllowAnyHeader();
 });
-
+app.UseAuthentication();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
