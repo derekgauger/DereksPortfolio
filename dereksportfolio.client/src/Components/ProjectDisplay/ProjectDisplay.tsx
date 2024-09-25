@@ -16,7 +16,10 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({ projects, filteredProje
             <ProjectFilters projects={projects} setFilteredProjects={setFilteredProjects} />
 
             <div className='my-4 mx-auto w-full text-center'>
-                <h2 className='text-xl sm:text-2xl font-bold text-[#636363]'>Hover to view project information</h2>
+                <h2 className='text-xl sm:text-2xl font-bold text-[#636363]'>
+                    <span className='hidden sm:inline'>Hover the image to view project information</span>
+                    <span className='sm:hidden'>Tap the image to view project information</span>
+                </h2>
             </div>
             <AnimatePresence mode='wait'>
                 <div

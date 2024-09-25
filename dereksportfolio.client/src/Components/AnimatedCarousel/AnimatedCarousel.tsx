@@ -12,7 +12,8 @@ const AnimatedCarousel: React.FC<AnimatedCarouselProps> = ({ skills }) => {
   return (
     <div className="w-full">
       <div className='text-center text-[#636363] text-lg sm:text-xl md:text-2xl mb-4'>
-        Hover to start the carousel
+        <span className="block sm:hidden">Tap the carousel to start it</span>
+        <span className="hidden sm:block">Hover over the carousel to start it</span>
       </div>
       <div className="relative overflow-hidden pt-7 pb-4 h-[120px] sm:h-[150px] carousel-container">
         <div className='z-20 absolute -top-5 w-1/4 sm:w-[300px] h-[200px] bg-gradient-to-r from-[--primary-background-color] to-transparent'></div>

@@ -11,7 +11,7 @@ const PhysicsSimulation: React.FC = () => {
 
     const SMALL_SCREEN_BREAKPOINT = 768;
 
-    const MAX_SPEED = 25;
+    const MAX_SPEED = Math.min(25, Math.max(10, dimensions.width * 0.02));
     const WALL_THICKNESS = Math.max(10, Math.min(20, dimensions.width * 0.02)); // Responsive wall thickness
     const PADDING = Math.max(5, Math.min(10, dimensions.width * 0.01)); // Responsive padding
     const INITIAL_SPEED = Math.min(5, dimensions.width * 0.005); // Responsive initial speed
