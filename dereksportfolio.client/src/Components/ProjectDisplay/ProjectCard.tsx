@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Project } from "../../Types/types";
-import { FaExpand, FaInfoCircle } from "react-icons/fa";
+import { FaInfoCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { enqueueSnackbar } from "notistack";
 
