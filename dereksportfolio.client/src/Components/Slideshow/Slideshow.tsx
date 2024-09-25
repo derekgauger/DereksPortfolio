@@ -37,7 +37,7 @@ const Slideshow: React.FC<SlideshowProps> = ({
     return () => {
       resetTimeout();
     };
-  }, [index]);
+  }, [index, autoScroll, autoScrollInterval, images.length]);
 
   return (
     <div className="slideshow rounded-sm">
@@ -46,9 +46,9 @@ const Slideshow: React.FC<SlideshowProps> = ({
           className="slideshowSlider text-green-400"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
         >
-          {images.map((image, index) => (
-            <div key={index} className="slide">
-              <img src={image} alt="project" className="slide-image" />
+          {images.map((image, idx) => (
+            <div key={idx} className="slide">
+              <img src={image} alt={`project ${idx + 1}`} className="slide-image object-cover w-full h-full" />
             </div>
           ))}
         </div>

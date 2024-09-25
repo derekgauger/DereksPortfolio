@@ -564,7 +564,7 @@ video {
   /* -moz-osx-font-smoothing: grayscale; */
 }
 
-body {
-  min-width: 320px;
+/* body {
+  min-width: 100vw;
   min-height: 100vh;
-}
+} */

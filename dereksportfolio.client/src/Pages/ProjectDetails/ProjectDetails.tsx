@@ -10,7 +10,7 @@ const ProjectDetails: React.FC = () => {
   const project: Project = location.state?.additionalData;
 
   if (!project) {
-    return <div>Project not found</div>;
+    return <div className="container mx-auto px-4 py-8 text-center">Project not found</div>;
   }
 
   return (
@@ -19,13 +19,13 @@ const ProjectDetails: React.FC = () => {
         title={project.title}
         description={project.pageDescription}
       />
-      <div className="mt-8">
+      <div className="mt-4 sm:mt-8 px-4">
         <ProductShowcase project={project} />
       </div>
       <Footer
         title={"Thank you for checking out my project details!"}
         content={
-          <p>
+          <p className="text-sm sm:text-base">
             If you would like to learn more about the project, please visit the 'Contact' page and send me a message. If you would like to contribute to the project, please visit the project's GitHub repository.
           </p>
         }

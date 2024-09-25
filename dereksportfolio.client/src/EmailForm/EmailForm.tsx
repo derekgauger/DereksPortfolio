@@ -3,6 +3,7 @@ import { EmailSettings } from "../Types/types";
 import { sendEmail } from "../Functions/email";
 import FloatingLabelInput from "./FloatingLabelInput";
 import Alert from "./Alert";
+import LoadingIcon from "../Components/LoadingIcon/LoadingIcon";
 
 
 const EmailForm = () => {
@@ -12,6 +13,7 @@ const EmailForm = () => {
     subject: "",
     body: "",
   });
+  const [submitting, setSubmitting] = useState(false);
 
   const [errors, setErrors] = useState<Partial<EmailSettings>>({});
   const [status, setStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
@@ -52,7 +54,7 @@ const EmailForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
-
+    setSubmitting(true);
     try {
       const result = await sendEmail(formData);
       if (result.error) {
@@ -64,10 +66,12 @@ const EmailForm = () => {
     } catch (error) {
       setStatus({ type: 'error', message: 'An unexpected error occurred. Please try again later.' });
     }
+    setSubmitting(false);
   };
 
   return (
     <form onSubmit={handleSubmit}>
+      {submitting && <LoadingIcon />}
       <div className="flex flex-col gap-4">
         {status.type && (
           <Alert type={status.type} message={status.message} />

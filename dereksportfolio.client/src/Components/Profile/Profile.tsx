@@ -25,11 +25,12 @@ const Profile: React.FC<ProfileProps> = ({
     acc[alternateDisplayName] = value;
     return acc;
   }, {} as { [key: string]: string });
+
   return (
-    <div className={`flex flex-col md:flex-row text-white`}>
-      <div className="md:w-1/3 mb-8 md:mb-0 flex items-center justify-center">
+    <div className="flex px-4 flex-col lg:flex-row text-white">
+      <div className="lg:w-1/3 mb-8 lg:mb-0 flex items-center justify-center">
         <div className="overflow-hidden rounded-sm">
-          <div className="w-72 h-72 relative">
+          <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 relative">
             <img
               src={image}
               alt="Profile"
@@ -38,12 +39,12 @@ const Profile: React.FC<ProfileProps> = ({
           </div>
         </div>
       </div>
-      <div className="md:w-2/4 md:pl-8 flex-1">
-        <h1 className="text-3xl font-bold mb-4">{title}</h1>
-        <p className="mb-4 italic text-wrap">{description1}</p>
-        <div className="grid grid-cols-2 gap-4 mb-4">
+      <div className="lg:w-2/3 lg:pl-8 flex-1">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-4">{title}</h1>
+        <p className="mb-4 italic text-wrap text-sm sm:text-base">{description1}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           {Object.entries(formattedContent).map(([key, value]) => (
-            <div key={key} className="flex items-center">
+            <div key={key} className="flex items-center text-sm sm:text-base">
               <span className="text-green-500 mr-2">›</span>
               <span className="font-semibold mr-2">{key}:</span>
               {key === "Website" ? (
@@ -51,17 +52,17 @@ const Profile: React.FC<ProfileProps> = ({
                   href={value}
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:underline text-green-400 hover:text-pink-600"
+                  className="hover:underline text-green-400 hover:text-pink-600 break-all"
                 >
                   {value}
                 </a>
               ) : (
-                <span>{value}</span>
+                <span className="break-all">{value}</span>
               )}
             </div>
           ))}
         </div>
-        <p className="text-wrap">{description2}</p>
+        <p className="text-wrap text-sm sm:text-base">{description2}</p>
       </div>
     </div>
   );

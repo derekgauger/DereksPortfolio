@@ -1,16 +1,17 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { routes } from "../../Routes/Routes";
+import { ChevronRight } from "lucide-react"; // Assuming you're using lucide-react for icons
 
 const Breadcrumbs = () => {
   const location = useLocation();
   const pathnames = location.pathname.split("/").filter((x) => x);
 
   return (
-    <nav aria-label="breadcrumb" className="py-2 ">
-      <ol className="flex items-center space-x-2">
+    <nav aria-label="breadcrumb" className="py-2 px-4 overflow-x-auto">
+      <ol className="flex items-center space-x-1 sm:space-x-2 whitespace-nowrap">
         <li>
-          <Link to="/" className="text-green-400 hover:text-pink-500 font-bold">
+          <Link to="/" className="text-green-400 hover:text-pink-500 font-bold text-sm sm:text-base">
             Home
           </Link>
         </li>
@@ -25,16 +26,19 @@ const Breadcrumbs = () => {
 
           return (
             <React.Fragment key={name}>
-              <li className="text-gray-500">/</li>
-              <li>
+              <li className="text-gray-500 flex items-center">
+                <ChevronRight size={16} className="hidden sm:inline" />
+                <span className="sm:hidden">/</span>
+              </li>
+              <li className="max-w-[120px] sm:max-w-none overflow-hidden overflow-ellipsis">
                 {isLast ? (
-                  <span className="text-white font-bold" aria-current="page">
+                  <span className="text-white font-bold text-sm sm:text-base" aria-current="page">
                     {route ? route.breadcrumb : alternateDisplayName}
                   </span>
                 ) : (
                   <Link
                     to={routeTo}
-                    className="text-green-400 hover:text-green-500 font-bold"
+                    className="text-green-400 hover:text-green-500 font-bold text-sm sm:text-base"
                   >
                     {route ? route.breadcrumb : alternateDisplayName}
                   </Link>

@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
             <Footer 
                 title={'Thank you for checking out my projects section!'} 
                 content={
-                    <p>I am always in the process of doing a project. Contact me if you would like to learn more or participate.</p>
+                    <p className="text-sm sm:text-base">I am always in the process of doing a project. Contact me if you would like to learn more or participate.</p>
                 }
             />
         </div>

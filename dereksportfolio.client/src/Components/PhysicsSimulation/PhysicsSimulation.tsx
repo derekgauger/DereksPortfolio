@@ -8,12 +8,12 @@ const PhysicsSimulation: React.FC = () => {
     const mousePosition = useRef({ x: 0, y: 0 });
     const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
 
-    const MAX_SPEED = 25; // Maximum speed limit
-    const WALL_THICKNESS = 20; // Increased wall thickness for visibility
-    const PADDING = 10; // Padding to ensure borders are visible
-    const INITIAL_SPEED = 5; // Initial speed for the shapes
-    const ATTRACTION_STRENGTH = 0.0000005; // Reduced strength of attraction to mouse
-    const MAX_ATTRACTION_DISTANCE = 200; // Maximum distance for attraction effect
+    const MAX_SPEED = 25;
+    const WALL_THICKNESS = Math.max(10, Math.min(20, dimensions.width * 0.02)); // Responsive wall thickness
+    const PADDING = Math.max(5, Math.min(10, dimensions.width * 0.01)); // Responsive padding
+    const INITIAL_SPEED = Math.min(5, dimensions.width * 0.005); // Responsive initial speed
+    const ATTRACTION_STRENGTH = Math.min(0.0000005, dimensions.width * 0.0000000005);
+    const MAX_ATTRACTION_DISTANCE = Math.min(200, dimensions.width * 0.2); // Responsive attraction distance
 
     // Function to limit the speed of a body
     const limitSpeed = (body: Matter.Body) => {
@@ -104,12 +104,17 @@ const PhysicsSimulation: React.FC = () => {
         const inputColor = "#3db84b";
 
         // Create initial shapes (circles, triangles, hexagons)
+        const numCircles = Math.floor(20 * (cw * ch) / (1920 * 1080));
+        const numTriangles = Math.floor(15 * (cw * ch) / (1920 * 1080));
+        const numHexagons = Math.floor(15 * (cw * ch) / (1920 * 1080));
+
+        // Create initial shapes with responsive sizes
         const shapes = [
-            ...Array(15).fill(null).map((_, index) => 
+            ...Array(numCircles).fill(null).map((_, index) => 
                 Bodies.circle(
                     PADDING + Math.random() * (cw - 2 * PADDING),
                     100 + Math.random() * (ch - 100 - PADDING),
-                    10 + Math.random() * 20,
+                    10 + Math.random() * Math.min(20, cw * 0.02),
                     {
                         mass: 10,
                         restitution: 0.9,
@@ -120,12 +125,12 @@ const PhysicsSimulation: React.FC = () => {
                     }
                 )
             ),
-            ...Array(10).fill(null).map((_, index) => 
+            ...Array(numTriangles).fill(null).map((_, index) => 
                 Bodies.polygon(
                     PADDING + Math.random() * (cw - 2 * PADDING),
                     100 + Math.random() * (ch - 100 - PADDING),
                     3,
-                    25 + Math.random() * 20,
+                    25 + Math.random() * Math.min(20, cw * 0.02),
                     {
                         mass: 10,
                         restitution: 0.9,
@@ -136,12 +141,12 @@ const PhysicsSimulation: React.FC = () => {
                     }
                 )
             ),
-            ...Array(10).fill(null).map((_, index) => 
+            ...Array(numHexagons).fill(null).map((_, index) => 
                 Bodies.polygon(
                     PADDING + Math.random() * (cw - 2 * PADDING),
                     100 + Math.random() * (ch - 100 - PADDING),
                     6,
-                    40 + Math.random() * 20,
+                    40 + Math.random() * Math.min(20, cw * 0.02),
                     {
                         mass: 10,
                         restitution: 0.9,
@@ -157,6 +162,8 @@ const PhysicsSimulation: React.FC = () => {
         shapes.forEach(shape => Body.setVelocity(shape, getRandomVelocity()));
 
         World.add(engine.current.world, [...walls, ...shapes]);
+
+
           
         // Create a runner
         const runner = Runner.create();
@@ -236,8 +243,8 @@ const PhysicsSimulation: React.FC = () => {
     }, []);
 
     return (
-        <div className='overflow-hidden h-full flex items-center justify-center'>
-            <div ref={scene} style={{ width: 'calc(100% - 40px)', height: 'calc(100% - 80px)' }} />
+        <div className='overflow-hidden w-full h-full flex items-center justify-center'>
+            <div ref={scene} style={{ width: '100%', height: '100%' }} />
         </div>
     );
 };

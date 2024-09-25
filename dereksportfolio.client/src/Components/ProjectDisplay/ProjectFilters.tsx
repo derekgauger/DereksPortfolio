@@ -2,11 +2,9 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Project, Tag } from '../../Types/types';
 import { FaCheck, FaTimes } from 'react-icons/fa';
 
-
 interface FilterState {
     [key: string]: string[];
 }
-
 
 interface ProjectFiltersProps {
     projects: Project[];
@@ -23,10 +21,9 @@ const ProjectFilters: React.FC<ProjectFiltersProps> = ({ projects, setFilteredPr
         const tags = projects.flatMap(project => project.tags);
         return Array.from(new Set(tags.map(tag => JSON.stringify(tag))))
           .map(tagString => JSON.parse(tagString) as Tag);
-      }, [projects]);
+    }, [projects]);
 
-    
-      const toggleFilter = (category: string, tag: string) => {
+    const toggleFilter = (category: string, tag: string) => {
         setFilters(prevFilters => {
           const updatedFilters = { ...prevFilters };
           if (updatedFilters[category].includes(tag)) {
@@ -36,23 +33,21 @@ const ProjectFilters: React.FC<ProjectFiltersProps> = ({ projects, setFilteredPr
           }
           return updatedFilters;
         });
-      };
+    };
 
-    
-      const handleSearchChange = (category: string, term: string) => {
+    const handleSearchChange = (category: string, term: string) => {
         setSearchTerms(prevTerms => ({ ...prevTerms, [category]: term }));
-      };
+    };
 
-      const categories = useMemo(() => {
+    const categories = useMemo(() => {
         const categorySet = new Set<string>();
         projects.forEach(project => {
           project.tags.forEach(tag => categorySet.add(tag.category));
         });
         return Array.from(categorySet);
-      }, [projects]);
+    }, [projects]);
 
-    
-      useEffect(() => {
+    useEffect(() => {
         const newFilters: FilterState = {};
         const newSearchTerms: {[key: string]: string} = {};
         categories.forEach(category => {
@@ -61,8 +56,7 @@ const ProjectFilters: React.FC<ProjectFiltersProps> = ({ projects, setFilteredPr
         });
         setFilters(newFilters);
         setSearchTerms(newSearchTerms);
-      }, [categories]);
-
+    }, [categories]);
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -79,8 +73,6 @@ const ProjectFilters: React.FC<ProjectFiltersProps> = ({ projects, setFilteredPr
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, [activeDropdown]);
-    
-      
     
     const removeFilter = (category: string, tag: string) => {
         setFilters(prevFilters => ({
@@ -101,13 +93,12 @@ const ProjectFilters: React.FC<ProjectFiltersProps> = ({ projects, setFilteredPr
         setFilteredProjects(projectsFiltered);
     }, [filters, projects, setFilteredProjects]);
 
-
     return (
         <div className='mt-4'>
             <div className="mb-4 flex flex-wrap gap-2 min-h-7">
                 {Object.entries(filters).map(([category, tags]) =>
                 tags.map(tag => (
-                    <div key={`${category}-${tag}`} className="bg-pink-600 text-white px-3 py-1 rounded-full flex items-center text-sm">
+                    <div key={`${category}-${tag}`} className="bg-pink-600 text-white px-2 sm:px-3 py-1 rounded-full flex items-center text-xs sm:text-sm">
                     <span>{tag}</span>
                     <button onClick={() => removeFilter(category, tag)} className="ml-2 hover:text-gray-200">
                         <FaTimes />
@@ -116,26 +107,26 @@ const ProjectFilters: React.FC<ProjectFiltersProps> = ({ projects, setFilteredPr
                 ))
                 )}
             </div>
-            <div className="flex flex-wrap gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">
                 {categories.map(category => (
-                <div key={category} className="flex-1 min-w-[200px]">
-                    <div className="relative" ref={el => dropdownRefs.current[category] = el}>
+                <div key={category} className="relative">
+                    <div ref={el => dropdownRefs.current[category] = el}>
                     <input
                         type="text"
                         onChange={(e) => handleSearchChange(category, e.target.value)}
                         onFocus={() => setActiveDropdown(category)}
                         placeholder={`${category.charAt(0).toUpperCase() + category.slice(1)}...`}
-                        className="w-full p-2 text-sm border rounded-sm bg-gray-800 text-gray-200 border-gray-700 focus:border-pink-600 focus:outline-none"
+                        className="w-full p-2 text-xs sm:text-sm border rounded-sm bg-gray-800 text-gray-200 border-gray-700 focus:border-pink-600 focus:outline-none"
                     />
                     {activeDropdown === category && (
-                        <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded shadow-lg max-h-60 overflow-y-auto">
+                        <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded shadow-lg max-h-48 sm:max-h-60 overflow-y-auto">
                         {allTags
                             .filter(tag => tag.category === category)
                             .filter(tag => tag.name.toLowerCase().includes(searchTerms[category].toLowerCase()))
                             .map(tag => (
                             <div
                                 key={`${tag.category}-${tag.name}`}
-                                className="p-2 hover:bg-gray-700 cursor-pointer text-gray-300 flex items-center justify-between"
+                                className="p-2 hover:bg-gray-700 cursor-pointer text-gray-300 flex items-center justify-between text-xs sm:text-sm"
                                 onClick={() => toggleFilter(category, tag.name)}
                             >
                                 <span className={filters[category].includes(tag.name) ? "text-green-400" : ''}>{tag.name}</span>
@@ -148,7 +139,6 @@ const ProjectFilters: React.FC<ProjectFiltersProps> = ({ projects, setFilteredPr
                 </div>
                 ))}
             </div>
-            
         </div>
     );
 };

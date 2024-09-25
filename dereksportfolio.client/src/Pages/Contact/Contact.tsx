@@ -15,8 +15,8 @@ const Contact: React.FC = () => {
         title="Contact"
         description="Welcome to my contact page! Please send me an email. I setup my own email service for this website and would love for it to be used. Include any feedback or questions you have about me or the website."
       />
-      <div className="flex mt-8 flex-col md:flex-row">
-        <div className="flex-1">
+      <div className="flex mt-4 sm:mt-8 flex-col md:flex-row px-4">
+        <div className="flex-1 mb-4 md:mb-0">
           <ContactInfoItem
             label={"Current Working Location"}
             value={"Milwaukee Area in Wisconsin"}
@@ -41,13 +41,13 @@ const Contact: React.FC = () => {
           />
         </div>
       </div>
-      <div className="mt-4">
+      <div className="mt-4 sm:mt-8 px-4">
         <EmailForm/>
       </div>
       <Footer
-        title={"Thank you for checking out my contact oage!"}
+        title={"Thank you for checking out my contact page!"}
         content={
-          <p>
+          <p className="text-sm sm:text-base">
             Well, this is the last page of the website. I appreciate the visit.
             You can now go back to the home page and play with the shapes.
           </p>

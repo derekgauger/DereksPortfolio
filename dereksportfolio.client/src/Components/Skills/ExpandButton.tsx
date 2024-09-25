@@ -8,25 +8,21 @@ interface ExpandButtonProps {
 }
 
 const ExpandButton: React.FC<ExpandButtonProps> = ({ openTitle, closeTitle, isExpanded, setExpanded }) => {
-
     return (
-        <div>
-            {isExpanded ? (
-                <button
-                    className='w-[180px] mx-auto p-2 border font-semibold border-pink-600 bg-pink-600 rounded-lg text-[--primary-background-color] hover:bg-pink-700 hover:text-[--primary-background-color]'
-                    onClick={() => setExpanded(!isExpanded)}>
-                    {closeTitle}
-                </button>
-            ) : (
-                <button
-                    className='w-[180px] mx-auto p-2 border font-semibold border-pink-600 bg-[--primary-background-color] rounded-lg text-[#cecece] hover:bg-pink-600 hover:text-[--primary-background-color]'
-                    onClick={() => setExpanded(!isExpanded)}>
-                    {openTitle}
-                </button>
-            )}
-            
+        <div className="flex">
+            <button
+                className={`w-full sm:w-[180px] p-2 border font-semibold rounded-lg transition-colors duration-300 ${
+                    isExpanded
+                        ? 'border-pink-600 bg-pink-600 text-[--primary-background-color] hover:bg-pink-700'
+                        : 'border-pink-600 bg-[--primary-background-color] text-[#cecece] hover:bg-pink-600 hover:text-[--primary-background-color]'
+                }`}
+                onClick={() => setExpanded(!isExpanded)}
+            >
+                <span className="text-sm sm:text-base">
+                    {isExpanded ? closeTitle : openTitle}
+                </span>
+            </button>
         </div>
-        
     );
 };
 

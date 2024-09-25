@@ -22,16 +22,19 @@ const Interests: React.FC = () => {
     ];
 
     return (
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
             <SectionHeading 
                 title={'My Interests'} 
                 description={"These are some of the things I enjoy doing in my free time. I'm always looking to learn new things. Also, I am looking for people to do coding projects with, if this is you, feel free to reach out to me!"}
             />
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-4">
                 {interests.map((interest: Interest) => (
-                    <div key={interest.name} className="flex items-center justify-center p-4 border rounded-sm hover:border-green-400 hover:text-green-400 transition-all duration-200">
-                        <interest.icon className="text-2xl mr-2 text-green-400" />
-                        <span className="text-lg ">{interest.name}</span>
+                    <div 
+                        key={interest.name} 
+                        className="flex flex-col sm:flex-row items-center justify-center p-2 sm:p-4 border rounded-sm hover:border-green-400 hover:text-green-400 transition-all duration-200"
+                    >
+                        <interest.icon className="text-xl sm:text-2xl mb-1 sm:mb-0 sm:mr-2 text-green-400" />
+                        <span className="text-sm sm:text-base text-center sm:text-left">{interest.name}</span>
                     </div>
                 ))}
             </div>

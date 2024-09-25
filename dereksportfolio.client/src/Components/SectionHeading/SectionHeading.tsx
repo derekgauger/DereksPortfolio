@@ -7,15 +7,15 @@ interface SectionHeadingProps {
 
 const SectionHeading: React.FC<SectionHeadingProps> = ({ title, description }) => {
     return (
-        <>
-            <div className={`flex items-center text-3xl`}>
+        <div className="mb-6 sm:mb-8 md:mb-10">
+            <div className="flex items-center text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3">
                 {title}
-                <div className='ml-2 w-[100px] h-[2px] bg-green-400'></div>
+                <div className="ml-2 w-[50px] sm:w-[75px] md:w-[100px] h-[2px] bg-green-400"></div>
             </div>
-            <div className='text-left mb-6 mt-1 max-w-[50%]'>
+            <div className="text-left text-sm sm:text-base md:text-lg max-w-full sm:max-w-[75%] md:max-w-[60%] lg:max-w-[50%]">
                 {description}
             </div>
-        </>
+        </div>
     );
 };
 

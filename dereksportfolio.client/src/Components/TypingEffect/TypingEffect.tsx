@@ -64,7 +64,7 @@ const TypingEffect: React.FC<TypingEffectProps> = ({ prefix, wordList }) => {
   }, [displayText, isTyping, isDeleting, wordIndex, wordList, incrementWordIndex]);
 
   return (
-    <div className="font-mono text-2xl min-h-[36px]">
+    <div className="font-mono text-md md:text-2xl min-h-[36px]">
       {prefix}{' '}
       <span className="inline-block border-b-2 border-pink-600">
         {displayText}

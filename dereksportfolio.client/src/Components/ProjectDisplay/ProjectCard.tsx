@@ -34,9 +34,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ opacity: { duration: 0.2 }, duration: 0.2 }}
-      className="relative flex group border border-1 border-gray-500 rounded-lg"
+      className="relative flex group border border-1 border-gray-500 rounded-lg overflow-hidden"
     >
-      <div className="flex overflow-hidden rounded-sm m-auto">
+      <div className="flex overflow-hidden rounded-sm m-auto w-full h-full">
         <img
           src={project.images[0]}
           alt={project.title}
@@ -44,11 +44,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         />
         <div className="absolute top-0 left-0 w-full h-full group-hover:bg-black transition-opacity duration-300 opacity-0 group-hover:opacity-70 rounded-lg"/>
         <div className="absolute top-0 left-0 w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-          <div className="flex flex-col items-center justify-center w-full h-full">
-            <h3 className="text-xl font-bold text-white text-center">
+          <div className="flex flex-col items-center justify-center w-full h-full p-2">
+            <h3 className="text-lg sm:text-xl font-bold text-white text-center mb-2">
               {project.title} - <span>{project.category}</span>
             </h3>
-            <div className="flex space-x-4 mt-1">
+            <div className="flex space-x-4">
               <button
                 onClick={() => handleNavigation(project.detailsUrl)}
                 className="p-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 tooltip"
@@ -66,7 +66,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-2 left-2 w-full transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+      <div className="absolute bottom-2 left-2 right-2 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
         <div className="flex gap-1 flex-wrap-reverse">
           {filteredTags.map((tag) => (
             <span

@@ -5,7 +5,6 @@ import SkillsSections from '../SkillsSections/SkillsSections';
 import ExpandButton from './ExpandButton';
 import SectionHeading from '../SectionHeading/SectionHeading';
 
-
 interface SkillsProps {
     skills: Skill[];
 }
@@ -26,12 +25,12 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
     }, [openSections]);
 
     return (
-        <div>
+        <div className="px-4">
             <SectionHeading 
                 title={'My Skills'} 
                 description={"Here are some of the technologies I've worked with over the years. This section showcases all the technologies I've worked with throughout my education, internships, professional experience, and personal projects."}
             />
-            <div className='w-full text-left'>
+            <div className='w-full text-left mb-4'>
                 <ExpandButton 
                     openTitle={"Expand Detailed Skills"} 
                     closeTitle={"Close Detailed Skills"} 
@@ -41,14 +40,13 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
             </div>
             <div 
                 id="skills-content"
+                className="transition-all duration-500 ease-in-out overflow-hidden"
                 style={{
                     maxHeight: openSections ? `${contentHeight}px` : '0px',
-                    overflow: 'hidden',
-                    transition: 'max-height .5s ease-in-out'
                 }}
             >
                 <SkillsSections skills={skills}/>
-                <div className='w-full text-left'>
+                <div className='w-full text-left mt-4'>
                     <ExpandButton 
                         openTitle={"Expand Detailed Skills"} 
                         closeTitle={"Close Detailed Skills"} 
@@ -57,7 +55,7 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
                     />
                 </div>
             </div>
-            <div className='mt-4'>
+            <div className='mt-8 sm:mt-12'>
                 <AnimatedCarousel skills={skills} />
             </div>
         </div>
