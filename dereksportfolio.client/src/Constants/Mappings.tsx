@@ -12,6 +12,7 @@ import {
   FaLinux,
   FaWindows,
   FaJava,
+  FaDigitalOcean,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -60,7 +61,8 @@ const iconMappings: { [key: string]: IconType } = {
   windows: FaWindows,
   java: FaJava,
   tailwind: SiTailwindcss,
-  azure: SiMicrosoftazure
+  azure: SiMicrosoftazure,
+  digitalocean: FaDigitalOcean
 };
 
 export const mapNameToIcon = (name: string): IconType => {
