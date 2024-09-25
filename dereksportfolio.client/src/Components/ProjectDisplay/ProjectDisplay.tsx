@@ -1,37 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Project } from '../../Types/types';
 import ProjectCard from './ProjectCard';
 import ProjectFilters from './ProjectFilters';
 import { AnimatePresence } from 'framer-motion';
-import { fetchProjects } from '../../Functions/projectsDatabase';
-import LoadingIcon from '../LoadingIcon/LoadingIcon';
 
-const ProjectDisplay: React.FC = () => {
-    const [projects, setProjects] = useState<Project[]>([]);
-    const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects);
-    const [isLoading, setIsLoading] = useState(true);
+interface ProjectDisplayProps {
+    projects: Project[];
+    filteredProjects: Project[];
+    setFilteredProjects: React.Dispatch<React.SetStateAction<Project[]>>;
+}
 
-    useEffect(() => {
-      const loadProjects = async () => {
-        try {
-          setIsLoading(true);
-          const fetchedProjects = await fetchProjects();
-          setProjects(fetchedProjects);
-          setFilteredProjects(fetchedProjects);
-        } catch (error) {
-          console.error('Error fetching projects:', error);
-        } finally {
-          setIsLoading(false);
-        }
-      };
-
-      loadProjects();
-    }, []);
-
-    if (isLoading) {
-        return <LoadingIcon/>;
-    }
-
+const ProjectDisplay: React.FC<ProjectDisplayProps> = ({ projects, filteredProjects, setFilteredProjects }) => {
     return (
         <div className="container px-4 mx-auto bg-[#0f0f0f] text-gray-200">
             <ProjectFilters projects={projects} setFilteredProjects={setFilteredProjects} />
