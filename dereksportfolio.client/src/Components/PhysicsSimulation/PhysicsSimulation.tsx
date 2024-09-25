@@ -7,6 +7,9 @@ const PhysicsSimulation: React.FC = () => {
     const engine = useRef(Engine.create());
     const mousePosition = useRef({ x: 0, y: 0 });
     const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    const SMALL_SCREEN_BREAKPOINT = 768;
 
     const MAX_SPEED = 25;
     const WALL_THICKNESS = Math.max(10, Math.min(20, dimensions.width * 0.02)); // Responsive wall thickness
@@ -53,7 +56,7 @@ const PhysicsSimulation: React.FC = () => {
 
     useEffect(() => {
         const cw = dimensions.width - 2 * PADDING;
-        const ch = dimensions.height - 2 * PADDING;
+        const ch = isSmallScreen ? dimensions.height * 0.75 - 2 * PADDING : dimensions.height - 2 * PADDING;
       
         if (!scene.current) return;
 
@@ -225,15 +228,19 @@ const PhysicsSimulation: React.FC = () => {
             render.textures = {};
             Runner.stop(runner);
         };
-    }, [dimensions]);
+    }, [dimensions, isSmallScreen]);
 
     useEffect(() => {
         const handleResize = () => {
+            const newWidth = window.innerWidth;
+            const newHeight = window.innerHeight;
             setDimensions({
-                width: window.innerWidth,
-                height: window.innerHeight
+                width: newWidth,
+                height: newHeight
             });
+            setIsSmallScreen(newWidth < SMALL_SCREEN_BREAKPOINT);
         };
+        handleResize();
 
         window.addEventListener('resize', handleResize);
         
@@ -244,7 +251,14 @@ const PhysicsSimulation: React.FC = () => {
 
     return (
         <div className='overflow-hidden w-full h-full flex items-center justify-center'>
-            <div ref={scene} style={{ width: '100%', height: '100%' }} />
+            <div 
+                ref={scene} 
+                style={{ 
+                    width: '100%', 
+                    height: isSmallScreen ? '75%' : '100%',
+                    maxHeight: isSmallScreen ? '75vh' : '100vh'
+                }} 
+            />
         </div>
     );
 };

@@ -6,7 +6,7 @@ interface LoadingIconProps {
 
 const LoadingIcon: React.FC<LoadingIconProps> = ({ size }) => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-opacity-75">
+    <div className="fixed inset-0 flex items-center justify-center bg-opacity-75 z-50">
       <div className={`${size || 'w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24'} animate-spin text-green-400`}>
         <svg className="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
