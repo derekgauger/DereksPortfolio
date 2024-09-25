@@ -30,7 +30,9 @@ const AnimatedCarousel: React.FC<AnimatedCarouselProps> = ({ skills }) => {
               </div>
               <div className="mt-4 sm:mt-6 text-center">
                 <h3 className="font-bold text-sm sm:text-base">{skill.name}</h3>
-                <p className='text-gray-500 text-xs sm:text-sm'>{skill.years} years</p>
+                <p className='text-gray-500 text-xs sm:text-sm'>
+                  {skill.years === 1 ? `${skill.years} year` : `${skill.years} years`}
+                </p>
               </div>
             </div>
           ))}

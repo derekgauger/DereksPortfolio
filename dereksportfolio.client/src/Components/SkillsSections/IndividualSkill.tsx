@@ -19,7 +19,9 @@ const IndividualSkill: React.FC<IndividualSkillProps> = ({ skill }) => {
                 </div>
                 <div className="mt-2 sm:mt-4 md:mt-6 text-center">
                     <h3 className="font-bold text-xs sm:text-sm md:text-base">{skill.name}</h3>
-                    <p className='text-gray-500 text-xs sm:text-sm'>{skill.years} years</p>
+                    <p className='text-gray-500 text-xs sm:text-sm'>
+                        {skill.years} {skill.years === 1 ? 'year' : 'years'}
+                    </p>
                 </div>
             </div>
             {isModalOpen && (
