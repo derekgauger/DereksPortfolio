@@ -8,7 +8,7 @@ interface ProjectInfoProps {
 
 const ProjectInfo: React.FC<ProjectInfoProps> = ({ project }) => {
   const filteredTags = project.tags.filter(
-    (tag: Tag) => tag.category !== "type"
+    (tag: Tag) => !["type", "Type"].includes(tag.category)
   );
 
   return (
