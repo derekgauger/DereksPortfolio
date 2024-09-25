@@ -6,7 +6,7 @@ export async function fetchProfile() {
     const response = await axios.get(API_URL + "/Profile");
     return response.data;
   } catch (error) {
-    console.error('Error fetching projects:', error);
+    console.error('Error fetching profile:', error);
     throw error;
   }
 }

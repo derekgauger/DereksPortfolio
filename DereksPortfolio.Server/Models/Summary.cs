@@ -1,0 +1,11 @@
+using System;
+
+namespace DereksPortfolio.Server.Models
+{
+  public class Summary
+  {
+    public int Id { get; set; }
+    public string Title { get; set; }
+    public string Description { get; set; }
+  }
+}

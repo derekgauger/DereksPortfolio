@@ -6,19 +6,23 @@ import Footer from '../../Components/Footer/Footer';
 import { fetchEducationData } from '../../Functions/educationDatabase';
 import { fetchWorkExperienceData } from '../../Functions/workExperienceDatabase';
 import LoadingIcon from '../../Components/LoadingIcon/LoadingIcon';
+import { fetchSummary } from '../../Functions/summaryDatabase';
 
 const Resume: React.FC = () => {
     const [education, setEducation] = useState<ExperienceGroupType>();
     const [workExperience, setWorkExperience] = useState<ExperienceGroupType>();
+    const [summary, setSummary] = useState<ExperienceGroupType>();
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const [educationData, workExperienceData] = await Promise.all([
+                const [educationData, workExperienceData, summaryData] = await Promise.all([
                     fetchEducationData(),
-                    fetchWorkExperienceData()
+                    fetchWorkExperienceData(),
+                    fetchSummary()
                 ]);
+                setSummary(summaryData);
                 setEducation(educationData);
                 setWorkExperience(workExperienceData);
             } catch (error) {
@@ -30,15 +34,15 @@ const Resume: React.FC = () => {
         fetchData();
     }, []);
 
-    const summary: ExperienceGroupType = {
-        title: 'Summary',
-        sections: [
-            {
-                title: "Derek Gauger Profile",
-                description: "Professional software engineer with skills in both web development and embedded systems. Experienced in application development, verification, automation, and code maintenance. Actively working on personal projects to enhance my skills. Worked on many teams using Agile Methodologies with various tech stacks and environments. Proven record of continuous improvement and reliability.",
-            },
-        ]
-    }
+    // const summary: ExperienceGroupType = {
+    //     title: 'Summary',
+    //     sections: [
+    //         {
+    //             title: "Derek Gauger Profile",
+    //             description: "Professional software engineer with skills in both web development and embedded systems. Experienced in application development, verification, automation, and code maintenance. Actively working on personal projects to enhance my skills. Worked on many teams using Agile Methodologies with various tech stacks and environments. Proven record of continuous improvement and reliability.",
+    //         },
+    //     ]
+    // }
 
     if (isLoading) {
         return <LoadingIcon/>;
@@ -52,7 +56,7 @@ const Resume: React.FC = () => {
             />
             <div className='flex flex-col lg:flex-row px-4'>
                 <div className='flex flex-col w-full lg:w-1/2 lg:pr-4'>
-                    <ExperienceGroup experienceGroup={summary}/>
+                    {summary && <ExperienceGroup experienceGroup={summary}/>}
                     {education && <ExperienceGroup experienceGroup={education}/>}
                 </div>
                 <div className='w-full lg:w-1/2 lg:pl-4'>

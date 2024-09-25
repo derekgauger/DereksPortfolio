@@ -23,6 +23,7 @@ builder.Services.AddScoped<EducationRepository>();
 builder.Services.AddScoped<WorkExperienceRepository>();
 builder.Services.AddScoped<SkillRepository>();
 builder.Services.AddScoped<ProfileRepository>();
+builder.Services.AddScoped<SummaryRepository>();
 
 builder.Services.AddScoped<EmailService>();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
