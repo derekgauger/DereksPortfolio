@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
         <div className='container mx-auto'>
             <PageHeader 
                 title='Projects' 
-                description='Welcome to my projects page! Here you can learn morw about what I have worked on and am currently working on in my free time. If you have any further questions please contact me.'
+                description='Welcome to my projects page! Here you can learn more about what I have worked on and am currently working on in my free time. If you have any further questions please contact me.'
             />
             <ProjectDisplay projects={projects} filteredProjects={filteredProjects} setFilteredProjects={setFilteredProjects}/>
             <Footer 
