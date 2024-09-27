@@ -28,7 +28,7 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
         <div className="px-4">
             <SectionHeading 
                 title={'My Skills'} 
-                description={"Here are some of the technologies I've worked with over the years. This section showcases all the technologies I've worked with throughout my education, internships, professional experience, and personal projects."}
+                description={"This section showcases all the technologies I've worked with throughout my education, internships, professional experience, and personal projects."}
             />
             <div className='w-full text-left mb-4'>
                 <ExpandButton 

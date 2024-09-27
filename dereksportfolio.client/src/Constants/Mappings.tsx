@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import { FaDebian } from "react-icons/fa6";
 import {
   FaReact,
   FaNodeJs,
@@ -13,6 +14,8 @@ import {
   FaWindows,
   FaJava,
   FaDigitalOcean,
+  FaFigma,
+  FaUbuntu,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -30,7 +33,9 @@ import {
   SiDotnet,
   SiRedux,
   SiTailwindcss,
-  SiMicrosoftazure
+  SiMicrosoftazure,
+  SiCanva,
+  SiSubversion
 } from "react-icons/si";
 
 const iconMappings: { [key: string]: IconType } = {
@@ -62,7 +67,17 @@ const iconMappings: { [key: string]: IconType } = {
   java: FaJava,
   tailwind: SiTailwindcss,
   azure: SiMicrosoftazure,
-  digitalocean: FaDigitalOcean
+  digitalocean: FaDigitalOcean,
+  materialui: FaReact,
+  canva: SiCanva,
+  figma: FaFigma,
+  cicd: SiMicrosoftazure,
+  svn: SiSubversion,
+  debian: FaDebian,
+  ubuntu: FaUbuntu,
+  
+
+  
 };
 
 export const mapNameToIcon = (name: string): IconType => {

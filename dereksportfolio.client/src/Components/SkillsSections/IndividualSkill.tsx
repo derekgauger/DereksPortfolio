@@ -14,8 +14,10 @@ const IndividualSkill: React.FC<IndividualSkillProps> = ({ skill }) => {
                 onClick={() => setIsModalOpen(true)}
                 className='p-2 sm:p-3 md:p-4 border rounded-sm hover:border-green-400 hover:text-green-400 transition-all duration-200 cursor-pointer'
             >
-                <div className='w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] rounded-full bg-[--primary-background-color] flex justify-center items-center text-green-400'>
-                    {skill.icon && <skill.icon className="text-2xl sm:text-3xl md:text-4xl" />}
+                <div className='flex w-full justify-center'>
+                    <div className='w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] rounded-full bg-[--primary-background-color] flex justify-center items-center text-green-400'>
+                        {skill.icon && <skill.icon className="text-2xl sm:text-3xl md:text-4xl" />}
+                    </div>
                 </div>
                 <div className="mt-2 sm:mt-4 md:mt-6 text-center">
                     <h3 className="font-bold text-xs sm:text-sm md:text-base">{skill.name}</h3>

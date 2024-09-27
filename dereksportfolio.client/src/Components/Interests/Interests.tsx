@@ -25,8 +25,7 @@ const Interests: React.FC = () => {
         <div className="container mx-auto">
             <SectionHeading 
                 title={'My Interests'} 
-                description={"These are some of the things I enjoy doing in my free time. I'm always looking to learn new things. Also, I am looking for people to do coding projects with, if this is you, feel free to reach out to me!"}
-            />
+                description={"These are some of the things I enjoy doing in my free time. I've recently taking up game development and I'm actively learning Unreal Engine 5."} />
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-4">
                 {interests.map((interest: Interest) => (
                     <div 

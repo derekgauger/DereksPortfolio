@@ -25,6 +25,8 @@ const SkillsSections: React.FC<SkillsSectionsProps> = ({ skills }) => {
             return acc;
         }, []);
 
+        categories.sort((a, b) => b.skills.length - a.skills.length);
+
         setCategories(categories);
     }, [skills]);
 

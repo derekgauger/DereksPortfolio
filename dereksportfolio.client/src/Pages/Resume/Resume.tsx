@@ -43,7 +43,7 @@ const Resume: React.FC = () => {
         <div className='container mx-auto'>
             <PageHeader 
                 title='Experiences' 
-                description='Welcome to my experiences page! Here you can learn more about my education and professional experience.'
+                description='Welcome to my experiences page! Here you can learn a little bit about my background, the education I have received, and the work experience I have gained over the years.'
             />
             <div className='flex flex-col lg:flex-row px-4'>
                 <div className='flex flex-col w-full lg:w-1/2 lg:pr-4'>
@@ -57,7 +57,7 @@ const Resume: React.FC = () => {
             <Footer 
                 title={'Thank you for checking out my experiences section!'} 
                 content={
-                    <p className="text-sm sm:text-base">If you haven't, go check out my about page to learn more about me and my interests!</p>
+                    <p className="text-sm sm:text-base">If you haven't already, go check out some of my projects. Each of those have been a great experience too.</p>
                 }
             />
         </div>

@@ -35,13 +35,13 @@ const Projects: React.FC = () => {
         <div className='container mx-auto'>
             <PageHeader 
                 title='Projects' 
-                description='Welcome to my projects page! Here you can learn more about the projects I have worked on and am currently working on. Hovering over each picture will give you an option to learn more about the project.'
+                description='Welcome to my projects page! Here you can learn morw about what I have worked on and am currently working on in my free time. If you have any further questions please contact me.'
             />
             <ProjectDisplay projects={projects} filteredProjects={filteredProjects} setFilteredProjects={setFilteredProjects}/>
             <Footer 
                 title={'Thank you for checking out my projects section!'} 
                 content={
-                    <p className="text-sm sm:text-base">I am always in the process of doing a project. Contact me if you would like to learn more or participate.</p>
+                    <p className="text-sm sm:text-base">I am always in the process of doing a project. Currently, I am working on building more website to put in the showcase and learning Unreal Engine 5.</p>
                 }
             />
         </div>
