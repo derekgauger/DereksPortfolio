@@ -58,7 +58,7 @@ const EmailForm = () => {
     try {
       const result = await sendEmail(formData);
       if (result.error) {
-        setStatus({ type: 'error', message: `Error sending email: ${result.error}` });
+        setStatus({ type: 'error', message: `Error sending email! Try again. If this continues contact me.` });
       } else {
         setStatus({ type: 'success', message: 'Email sent successfully!' });
         setFormData({ name: "", email: "", subject: "", body: "" });

@@ -11,7 +11,7 @@ const Breadcrumbs = () => {
     <nav aria-label="breadcrumb" className="py-2 px-4 overflow-x-auto">
       <ol className="flex items-center space-x-1 sm:space-x-2 whitespace-nowrap">
         <li>
-          <Link to="/" className="text-green-400 hover:text-pink-500 font-bold text-sm sm:text-base">
+          <Link to="/" className="text-green-400 hover:text-pink-600 font-bold text-sm sm:text-base">
             Home
           </Link>
         </li>
@@ -38,7 +38,7 @@ const Breadcrumbs = () => {
                 ) : (
                   <Link
                     to={routeTo}
-                    className="text-green-400 hover:text-green-500 font-bold text-sm sm:text-base"
+                    className="text-green-400 hover:text-pink-600 font-bold text-sm sm:text-base"
                   >
                     {route ? route.breadcrumb : alternateDisplayName}
                   </Link>

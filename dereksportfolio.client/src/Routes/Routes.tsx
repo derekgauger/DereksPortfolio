@@ -5,6 +5,8 @@ import ProjectDetails from "../Pages/ProjectDetails/ProjectDetails";
 import Projects from "../Pages/Projects/Projects";
 import Resume from "../Pages/Resume/Resume";
 import { Navigate } from "react-router-dom";
+import TruthTerms from "../Pages/TruthTerms/TruthTerms";
+import TruthPrivacy from "../Pages/TruthPrivacy/TruthPrivacy";
 
 export const routes = [
     {
@@ -37,6 +39,18 @@ export const routes = [
         element: <ProjectDetails />,
         exact: true,
         breadcrumb: 'Project Details'
+    },
+    {
+        path: '/projects/truth/terms-of-service',
+        element: <TruthTerms />,
+        exact: true,
+        breadcrumb: 'Terms of Service'
+    },
+    {
+        path: '/projects/truth/privacy-policy',
+        element: <TruthPrivacy />,
+        exact: true,
+        breadcrumb: 'Privacy Policy'
     },
     {
         path: '/contact',
