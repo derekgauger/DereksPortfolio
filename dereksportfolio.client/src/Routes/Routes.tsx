@@ -58,9 +58,9 @@ export const routes = [
         exact: true,
         breadcrumb: 'Contact',
     },
-    {
-        path: '*',
-        element: <Navigate to="/"/>,
-        breadcrumb: 'Home'
-    }
+    // {
+    //     path: '*',
+    //     element: <Navigate to="/"/>,
+    //     breadcrumb: 'Home'
+    // }
 ]
