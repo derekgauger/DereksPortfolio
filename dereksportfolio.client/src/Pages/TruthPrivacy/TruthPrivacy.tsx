@@ -2,15 +2,6 @@ import React from "react";
 import PageHeader from "../../Components/PageHeader/PageHeader";
 import Footer from "../../Components/Footer/Footer";
 
-declare global {
-  // eslint-disable-next-line @typescript-eslint/no-namespace
-  namespace JSX {
-    interface IntrinsicElements {
-      bdt: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
-    }
-  }
-}
-
 const TruthPrivacy: React.FC = () => {
   const containerStyles = "container mx-auto px-4 sm:px-6 lg:px-8";
 
@@ -41,9 +32,9 @@ const TruthPrivacy: React.FC = () => {
             <strong>
               <span style={{ fontSize: 26 }}>
                 <span data-custom-class="title">
-                  <bdt className="block-component" />
-                  <bdt className="question">PRIVACY POLICY</bdt>
-                  <bdt className="statement-end-if-in-editor" />
+                  <span className="block-component" />
+                  <span className="question">PRIVACY POLICY</span>
+                  <span className="statement-end-if-in-editor" />
                 </span>
               </span>
             </strong>
@@ -56,7 +47,7 @@ const TruthPrivacy: React.FC = () => {
               <strong>
                 <span style={{ fontSize: 15 }}>
                   <span data-custom-class="subtitle">
-                    Last updated <bdt className="question">March 03, 2024</bdt>
+                    Last updated <span className="question">March 03, 2024</span>
                   </span>
                 </span>
               </strong>
@@ -76,22 +67,22 @@ const TruthPrivacy: React.FC = () => {
               <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
                 <span data-custom-class="body_text">
                   This privacy notice for{" "}
-                  <bdt className="question">
+                  <span className="question">
                     Truth
-                    <bdt className="block-component" />
-                  </bdt>{" "}
-                  (<bdt className="block-component" />"<strong>we</strong>," "
+                    <span className="block-component" />
+                  </span>{" "}
+                  (<span className="block-component" />"<strong>we</strong>," "
                   <strong>us</strong>," or "<strong>our</strong>"
-                  <bdt className="statement-end-if-in-editor" />
+                  <span className="statement-end-if-in-editor" />
                 </span>
                 <span data-custom-class="body_text">
                   ), describes how and why we might collect, store, use, and/or
-                  share (<bdt className="block-component" />"
+                  share (<span className="block-component" />"
                   <strong>process</strong>"
-                  <bdt className="statement-end-if-in-editor" />) your
+                  <span className="statement-end-if-in-editor" />) your
                   information when you use our services (
-                  <bdt className="block-component" />"<strong>Services</strong>"
-                  <bdt className="statement-end-if-in-editor" />
+                  <span className="block-component" />"<strong>Services</strong>"
+                  <span className="statement-end-if-in-editor" />
                   ), such as when you:
                 </span>
               </span>
@@ -101,35 +92,35 @@ const TruthPrivacy: React.FC = () => {
                 <span data-custom-class="body_text">
                   <span style={{ color: "rgb(89, 89, 89)" }}>
                     <span data-custom-class="body_text">
-                      <bdt className="block-component" />
+                      <span className="block-component" />
                     </span>
                   </span>
                 </span>
               </span>
             </span>
             <div>
-              <bdt className="block-component">
+              <span className="block-component">
                 <span style={{ fontSize: 15 }}>
                   <span style={{ fontSize: 15 }}>
                     <span style={{ color: "rgb(127, 127, 127)" }}>
                       <span data-custom-class="body_text">
                         <span style={{ color: "rgb(89, 89, 89)" }}>
                           <span data-custom-class="body_text">
-                            <bdt className="block-component" />
+                            <span className="block-component" />
                           </span>
                         </span>
                       </span>
                     </span>
                   </span>
                 </span>
-              </bdt>
+              </span>
               <div style={{ lineHeight: "1.5" }}>
                 <span style={{ fontSize: 15 }}>
                   <span style={{ color: "rgb(127, 127, 127)" }}>
                     <span data-custom-class="body_text">
                       <span style={{ color: "rgb(89, 89, 89)" }}>
                         <span data-custom-class="body_text">
-                          <bdt className="block-component" />
+                          <span className="block-component" />
                         </span>
                       </span>
                     </span>
@@ -143,9 +134,9 @@ const TruthPrivacy: React.FC = () => {
                         this privacy notice will help you understand your
                         privacy rights and choices. If you do not agree with our
                         policies and practices, please do not use our Services.
-                        <bdt className="block-component" /> If you still have
+                        <span className="block-component" /> If you still have
                         any questions or concerns, please contact us at{" "}
-                        <bdt className="question">gaugerderek@gmail.com</bdt>.
+                        <span className="question">gaugerderek@gmail.com</span>.
                       </span>
                     </span>
                   </span>
@@ -231,9 +222,9 @@ const TruthPrivacy: React.FC = () => {
                       <strong>
                         Do we process any sensitive personal information?
                       </strong>{" "}
-                      <bdt className="block-component" />
+                      <span className="block-component" />
                       We do not process sensitive personal information.
-                      <bdt className="else-block" />
+                      <span className="else-block" />
                     </span>
                   </span>
                 </div>
@@ -246,9 +237,9 @@ const TruthPrivacy: React.FC = () => {
                       <strong>
                         Do we receive any information from third parties?
                       </strong>{" "}
-                      <bdt className="block-component" />
+                      <span className="block-component" />
                       We do not receive any information from third parties.
-                      <bdt className="else-block" />
+                      <span className="else-block" />
                     </span>
                   </span>
                 </div>
@@ -284,11 +275,11 @@ const TruthPrivacy: React.FC = () => {
                     <span data-custom-class="body_text">
                       <strong>
                         In what situations and with which{" "}
-                        <bdt className="block-component" />
+                        <span className="block-component" />
                         parties do we share personal information?
                       </strong>{" "}
                       We may share information in specific situations and with
-                      specific <bdt className="block-component" />
+                      specific <span className="block-component" />
                       third parties. Learn more about&nbsp;
                     </span>
                   </span>
@@ -301,7 +292,7 @@ const TruthPrivacy: React.FC = () => {
                   </a>
                   <span style={{ fontSize: 15 }}>
                     <span data-custom-class="body_text">
-                      .<bdt className="block-component" />
+                      .<span className="block-component" />
                     </span>
                   </span>
                 </div>
@@ -334,7 +325,7 @@ const TruthPrivacy: React.FC = () => {
                     <span data-custom-class="body_text">
                       <strong>How do you exercise your rights?</strong> The
                       easiest way to exercise your rights is by{" "}
-                      <bdt className="block-component">submitting a&nbsp;</bdt>
+                      <span className="block-component">submitting a&nbsp;</span>
                     </span>
                   </span>
                   <a
@@ -351,7 +342,7 @@ const TruthPrivacy: React.FC = () => {
                   </a>
                   <span style={{ fontSize: 15 }}>
                     <span data-custom-class="body_text">
-                      <bdt className="block-component" />, or by contacting us.
+                      <span className="block-component" />, or by contacting us.
                       We will consider and act upon any request in accordance
                       with applicable data protection laws.
                     </span>
@@ -414,7 +405,7 @@ const TruthPrivacy: React.FC = () => {
                     <a data-custom-class="link" href="#infouse">
                       <span style={{ color: "rgb(0, 58, 250)" }}>
                         2. HOW DO WE PROCESS YOUR INFORMATION?
-                        <bdt className="block-component" />
+                        <span className="block-component" />
                       </span>
                     </a>
                   </span>
@@ -430,7 +421,7 @@ const TruthPrivacy: React.FC = () => {
                             PERSONAL INFORMATION?
                           </span>
                         </span>
-                        <bdt className="statement-end-if-in-editor" />
+                        <span className="statement-end-if-in-editor" />
                       </span>
                     </a>
                   </span>
@@ -444,22 +435,22 @@ const TruthPrivacy: React.FC = () => {
                       </a>
                     </span>
                     <span data-custom-class="body_text">
-                      <bdt className="block-component" />
+                      <span className="block-component" />
                       <span style={{ color: "rgb(127, 127, 127)" }}>
                         <span style={{ color: "rgb(89, 89, 89)" }}>
                           <span data-custom-class="body_text">
                             <span style={{ color: "rgb(89, 89, 89)" }}>
-                              <bdt className="block-component" />
+                              <span className="block-component" />
                             </span>
                           </span>
                           <span data-custom-class="body_text">
                             <span style={{ color: "rgb(89, 89, 89)" }}>
                               <span style={{ color: "rgb(89, 89, 89)" }}>
                                 <span style={{ color: "rgb(89, 89, 89)" }}>
-                                  <bdt className="block-component" />
+                                  <span className="block-component" />
                                 </span>
                               </span>
-                              <bdt className="block-component" />
+                              <span className="block-component" />
                             </span>
                           </span>
                         </span>
@@ -479,8 +470,8 @@ const TruthPrivacy: React.FC = () => {
                         <span data-custom-class="body_text">
                           <span style={{ color: "rgb(89, 89, 89)" }}>
                             <span style={{ color: "rgb(89, 89, 89)" }}>
-                              <bdt className="block-component" />
-                              <bdt className="block-component" />
+                              <span className="block-component" />
+                              <span className="block-component" />
                             </span>
                           </span>
                         </span>
@@ -499,7 +490,7 @@ const TruthPrivacy: React.FC = () => {
                       <span style={{ color: "rgb(89, 89, 89)" }}>
                         <span data-custom-class="body_text">
                           <span style={{ color: "rgb(89, 89, 89)" }}>
-                            <bdt className="statement-end-if-in-editor" />
+                            <span className="statement-end-if-in-editor" />
                           </span>
                         </span>
                       </span>
@@ -520,7 +511,7 @@ const TruthPrivacy: React.FC = () => {
                     <a data-custom-class="link" href="#DNT">
                       <span style={{ color: "rgb(0, 58, 250)" }}>
                         8. CONTROLS FOR DO-NOT-TRACK FEATURES
-                        <bdt className="block-component" />
+                        <span className="block-component" />
                       </span>
                     </a>
                   </span>
@@ -534,11 +525,11 @@ const TruthPrivacy: React.FC = () => {
                       </span>
                     </a>
                   </span>
-                  <bdt className="block-component">
+                  <span className="block-component">
                     <span style={{ fontSize: 15 }}>
                       <span data-custom-class="body_text" />
                     </span>
-                  </bdt>
+                  </span>
                 </div>
                 <div style={{ lineHeight: "1.5" }}>
                   <a data-custom-class="link" href="#otherlaws">
@@ -547,24 +538,24 @@ const TruthPrivacy: React.FC = () => {
                     </span>
                   </a>
                   <span style={{ fontSize: 15 }}>
-                    <bdt className="statement-end-if-in-editor">
+                    <span className="statement-end-if-in-editor">
                       <span data-custom-class="body_text" />
-                    </bdt>
+                    </span>
                   </span>
                 </div>
                 <div style={{ lineHeight: "1.5" }}>
-                  <bdt className="block-component">
+                  <span className="block-component">
                     <span style={{ fontSize: 15 }} />
-                  </bdt>
-                  <bdt className="block-component" />
-                  <bdt className="block-component" />
-                  <bdt className="block-component" />
-                  <bdt className="block-component" />
-                  <bdt className="block-component" />
-                  <bdt className="block-component" />
-                  <bdt className="block-component" />
-                  <bdt className="block-component" />
-                  <bdt className="block-component" />
+                  </span>
+                  <span className="block-component" />
+                  <span className="block-component" />
+                  <span className="block-component" />
+                  <span className="block-component" />
+                  <span className="block-component" />
+                  <span className="block-component" />
+                  <span className="block-component" />
+                  <span className="block-component" />
+                  <span className="block-component" />
                 </div>
                 <div style={{ lineHeight: "1.5" }}>
                   <span style={{ fontSize: 15 }}>
@@ -681,7 +672,7 @@ const TruthPrivacy: React.FC = () => {
                         We collect personal information that you voluntarily
                         provide to us when you{" "}
                         <span style={{ fontSize: 15 }}>
-                          <bdt className="block-component" />
+                          <span className="block-component" />
                         </span>
                       </span>
                       <span data-custom-class="body_text">
@@ -701,7 +692,7 @@ const TruthPrivacy: React.FC = () => {
                     <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
                       <span data-custom-class="body_text">
                         <span style={{ fontSize: 15 }}>
-                          <bdt className="block-component" />
+                          <span className="block-component" />
                         </span>
                       </span>
                     </span>
@@ -711,7 +702,7 @@ const TruthPrivacy: React.FC = () => {
                   <span style={{ fontSize: 15 }}>
                     <span data-custom-class="body_text">
                       <strong>Sensitive Information.</strong>{" "}
-                      <bdt className="block-component" />
+                      <span className="block-component" />
                       We do not process sensitive information.
                     </span>
                   </span>
@@ -722,7 +713,7 @@ const TruthPrivacy: React.FC = () => {
                 <div style={{ lineHeight: "1.5" }}>
                   <span style={{ fontSize: 15 }}>
                     <span data-custom-class="body_text">
-                      <bdt className="else-block" />
+                      <span className="else-block" />
                     </span>
                   </span>
                   <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
@@ -730,14 +721,14 @@ const TruthPrivacy: React.FC = () => {
                       <span data-custom-class="body_text">
                         <span style={{ fontSize: 15 }}>
                           <span data-custom-class="body_text">
-                            <bdt className="block-component">
-                              <bdt className="block-component" />
-                            </bdt>
+                            <span className="block-component">
+                              <span className="block-component" />
+                            </span>
                           </span>
                         </span>
                       </span>
                     </span>
-                    <bdt className="block-component" />
+                    <span className="block-component" />
                   </span>
                 </div>
                 <div style={{ lineHeight: "1.5" }}>
@@ -758,7 +749,7 @@ const TruthPrivacy: React.FC = () => {
                   <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
                     <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
                       <span data-custom-class="body_text">
-                        <bdt className="block-component" />
+                        <span className="block-component" />
                       </span>
                     </span>
                   </span>
@@ -850,11 +841,11 @@ const TruthPrivacy: React.FC = () => {
                   <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
                     <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
                       <span data-custom-class="body_text">
-                        <bdt className="block-component" />
+                        <span className="block-component" />
                       </span>
                     </span>
                     <span data-custom-class="body_text">
-                      <bdt className="block-component" />
+                      <span className="block-component" />
                     </span>
                   </span>
                 </div>
@@ -863,7 +854,7 @@ const TruthPrivacy: React.FC = () => {
                     <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
                       <span data-custom-class="body_text">
                         The information we collect includes:
-                        <bdt className="block-component" />
+                        <span className="block-component" />
                       </span>
                     </span>
                   </span>
@@ -886,16 +877,16 @@ const TruthPrivacy: React.FC = () => {
                           and files viewed, searches, and other actions you take
                           such as which features you use), device event
                           information (such as system activity, error reports
-                          (sometimes called <bdt className="block-component" />
+                          (sometimes called <span className="block-component" />
                           "crash dumps"
-                          <bdt className="statement-end-if-in-editor" />
+                          <span className="statement-end-if-in-editor" />
                           ), and hardware settings).
                           <span style={{ fontSize: 15 }}>
                             <span style={{ color: "rgb(89, 89, 89)" }}>
                               <span data-custom-class="body_text">
                                 <span style={{ fontSize: 15 }}>
                                   <span style={{ color: "rgb(89, 89, 89)" }}>
-                                    <bdt className="statement-end-if-in-editor" />
+                                    <span className="statement-end-if-in-editor" />
                                   </span>
                                 </span>
                               </span>
@@ -907,22 +898,22 @@ const TruthPrivacy: React.FC = () => {
                   </li>
                 </ul>
                 <div style={{ lineHeight: "1.5" }}>
-                  <bdt className="block-component">
+                  <span className="block-component">
                     <span style={{ fontSize: 15 }}>
                       <span data-custom-class="body_text" />
                     </span>
-                  </bdt>
+                  </span>
                   <div style={{ lineHeight: "1.5" }}>
-                    <bdt className="block-component">
+                    <span className="block-component">
                       <span style={{ fontSize: 15 }}>
                         <span data-custom-class="body_text" />
                       </span>
-                    </bdt>
+                    </span>
                     <div>
-                      <bdt className="block-component">
+                      <span className="block-component">
                         <span style={{ fontSize: 15 }} />
-                      </bdt>
-                      <bdt className="statement-end-if-in-editor" />
+                      </span>
+                      <span className="statement-end-if-in-editor" />
                       <span data-custom-class="body_text">
                         <span
                           style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}
@@ -932,9 +923,9 @@ const TruthPrivacy: React.FC = () => {
                               style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}
                             >
                               <span data-custom-class="body_text">
-                                <bdt className="statement-end-if-in-editor">
-                                  <bdt className="block-component" />
-                                </bdt>
+                                <span className="statement-end-if-in-editor">
+                                  <span className="block-component" />
+                                </span>
                               </span>
                             </span>
                           </span>
@@ -942,7 +933,7 @@ const TruthPrivacy: React.FC = () => {
                       </span>
                       <span style={{ fontSize: 15 }}>
                         <span data-custom-class="body_text">
-                          <bdt className="block-component" />
+                          <span className="block-component" />
                         </span>
                       </span>
                     </div>
@@ -1028,7 +1019,7 @@ const TruthPrivacy: React.FC = () => {
                               of reasons, depending on how you interact with our
                               Services, including:
                             </strong>
-                            <bdt className="block-component" />
+                            <span className="block-component" />
                           </span>
                         </span>
                       </span>
@@ -1040,7 +1031,7 @@ const TruthPrivacy: React.FC = () => {
                             style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}
                           >
                             <span data-custom-class="body_text">
-                              <bdt className="block-component" />
+                              <span className="block-component" />
                             </span>
                           </span>
                         </span>
@@ -1052,7 +1043,7 @@ const TruthPrivacy: React.FC = () => {
                               style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}
                             >
                               <span data-custom-class="body_text">
-                                <bdt className="block-component" />
+                                <span className="block-component" />
                               </span>
                             </span>
                           </span>
@@ -1067,7 +1058,7 @@ const TruthPrivacy: React.FC = () => {
                                 }}
                               >
                                 <span data-custom-class="body_text">
-                                  <bdt className="block-component" />
+                                  <span className="block-component" />
                                 </span>
                               </span>
                             </span>
@@ -1085,37 +1076,37 @@ const TruthPrivacy: React.FC = () => {
                                   }}
                                 >
                                   <span data-custom-class="body_text">
-                                    <bdt className="block-component" />
+                                    <span className="block-component" />
                                   </span>
                                 </span>
                               </span>
                               <div style={{ lineHeight: "1.5" }}>
-                                <bdt className="block-component">
+                                <span className="block-component">
                                   <span style={{ fontSize: 15 }} />
-                                </bdt>
+                                </span>
                                 <div style={{ lineHeight: "1.5" }}>
-                                  <bdt className="block-component">
+                                  <span className="block-component">
                                     <span style={{ fontSize: 15 }} />
-                                  </bdt>
+                                  </span>
                                   <div style={{ lineHeight: "1.5" }}>
-                                    <bdt className="block-component">
+                                    <span className="block-component">
                                       <span style={{ fontSize: 15 }} />
-                                    </bdt>
+                                    </span>
                                     <div style={{ lineHeight: "1.5" }}>
-                                      <bdt className="block-component">
+                                      <span className="block-component">
                                         <span style={{ fontSize: 15 }}>
                                           <span data-custom-class="body_text" />
                                         </span>
-                                      </bdt>
+                                      </span>
                                       <p
                                         style={{
                                           fontSize: 15,
                                           lineHeight: "1.5",
                                         }}
                                       >
-                                        <bdt className="block-component">
+                                        <span className="block-component">
                                           <span style={{ fontSize: 15 }} />
-                                        </bdt>
+                                        </span>
                                       </p>
                                       <p
                                         style={{
@@ -1123,9 +1114,9 @@ const TruthPrivacy: React.FC = () => {
                                           lineHeight: "1.5",
                                         }}
                                       >
-                                        <bdt className="block-component">
+                                        <span className="block-component">
                                           <span style={{ fontSize: 15 }} />
-                                        </bdt>
+                                        </span>
                                       </p>
                                       <p
                                         style={{
@@ -1133,7 +1124,7 @@ const TruthPrivacy: React.FC = () => {
                                           lineHeight: "1.5",
                                         }}
                                       >
-                                        <bdt className="block-component" />
+                                        <span className="block-component" />
                                       </p>
                                       <p
                                         style={{
@@ -1141,66 +1132,66 @@ const TruthPrivacy: React.FC = () => {
                                           lineHeight: "1.5",
                                         }}
                                       >
-                                        <bdt className="block-component" />
+                                        <span className="block-component" />
                                       </p>
                                       <div style={{ lineHeight: "1.5" }}>
-                                        <bdt className="block-component">
+                                        <span className="block-component">
                                           <span style={{ fontSize: 15 }}>
                                             <span data-custom-class="body_text" />
                                           </span>
-                                        </bdt>
+                                        </span>
                                         <div style={{ lineHeight: "1.5" }}>
-                                          <bdt className="block-component">
+                                          <span className="block-component">
                                             <span style={{ fontSize: 15 }} />
-                                          </bdt>
+                                          </span>
                                           <div style={{ lineHeight: "1.5" }}>
-                                            <bdt className="block-component">
+                                            <span className="block-component">
                                               <span style={{ fontSize: 15 }} />
-                                            </bdt>
+                                            </span>
                                             <div style={{ lineHeight: "1.5" }}>
                                               <span style={{ fontSize: 15 }}>
-                                                <bdt className="block-component">
+                                                <span className="block-component">
                                                   <span data-custom-class="body_text" />
-                                                </bdt>
+                                                </span>
                                               </span>
                                               <div
                                                 style={{ lineHeight: "1.5" }}
                                               >
-                                                <bdt className="block-component">
+                                                <span className="block-component">
                                                   <span
                                                     style={{ fontSize: 15 }}
                                                   >
                                                     <span data-custom-class="body_text" />
                                                   </span>
-                                                </bdt>
+                                                </span>
                                                 <div
                                                   style={{ lineHeight: "1.5" }}
                                                 >
-                                                  <bdt className="block-component">
+                                                  <span className="block-component">
                                                     <span
                                                       style={{ fontSize: 15 }}
                                                     >
                                                       <span data-custom-class="body_text" />
                                                     </span>
-                                                  </bdt>
+                                                  </span>
                                                   <div
                                                     style={{
                                                       lineHeight: "1.5",
                                                     }}
                                                   >
-                                                    <bdt className="block-component">
+                                                    <span className="block-component">
                                                       <span
                                                         style={{ fontSize: 15 }}
                                                       >
                                                         <span data-custom-class="body_text" />
                                                       </span>
-                                                    </bdt>
+                                                    </span>
                                                     <div
                                                       style={{
                                                         lineHeight: "1.5",
                                                       }}
                                                     >
-                                                      <bdt className="block-component">
+                                                      <span className="block-component">
                                                         <span
                                                           style={{
                                                             fontSize: 15,
@@ -1208,13 +1199,13 @@ const TruthPrivacy: React.FC = () => {
                                                         >
                                                           <span data-custom-class="body_text" />
                                                         </span>
-                                                      </bdt>
+                                                      </span>
                                                       <div
                                                         style={{
                                                           lineHeight: "1.5",
                                                         }}
                                                       >
-                                                        <bdt className="block-component">
+                                                        <span className="block-component">
                                                           <span
                                                             style={{
                                                               fontSize: 15,
@@ -1222,13 +1213,13 @@ const TruthPrivacy: React.FC = () => {
                                                           >
                                                             <span data-custom-class="body_text" />
                                                           </span>
-                                                        </bdt>
+                                                        </span>
                                                         <div
                                                           style={{
                                                             lineHeight: "1.5",
                                                           }}
                                                         >
-                                                          <bdt className="block-component">
+                                                          <span className="block-component">
                                                             <span
                                                               style={{
                                                                 fontSize: 15,
@@ -1236,13 +1227,13 @@ const TruthPrivacy: React.FC = () => {
                                                             >
                                                               <span data-custom-class="body_text" />
                                                             </span>
-                                                          </bdt>
+                                                          </span>
                                                           <div
                                                             style={{
                                                               lineHeight: "1.5",
                                                             }}
                                                           >
-                                                            <bdt className="block-component">
+                                                            <span className="block-component">
                                                               <span
                                                                 style={{
                                                                   fontSize: 15,
@@ -1250,14 +1241,14 @@ const TruthPrivacy: React.FC = () => {
                                                               >
                                                                 <span data-custom-class="body_text" />
                                                               </span>
-                                                            </bdt>
+                                                            </span>
                                                             <div
                                                               style={{
                                                                 lineHeight:
                                                                   "1.5",
                                                               }}
                                                             >
-                                                              <bdt className="block-component">
+                                                              <span className="block-component">
                                                                 <span
                                                                   style={{
                                                                     fontSize: 15,
@@ -1265,14 +1256,14 @@ const TruthPrivacy: React.FC = () => {
                                                                 >
                                                                   <span data-custom-class="body_text" />
                                                                 </span>
-                                                              </bdt>
+                                                              </span>
                                                               <div
                                                                 style={{
                                                                   lineHeight:
                                                                     "1.5",
                                                                 }}
                                                               >
-                                                                <bdt className="block-component">
+                                                                <span className="block-component">
                                                                   <span
                                                                     style={{
                                                                       fontSize: 15,
@@ -1280,14 +1271,14 @@ const TruthPrivacy: React.FC = () => {
                                                                   >
                                                                     <span data-custom-class="body_text" />
                                                                   </span>
-                                                                </bdt>
+                                                                </span>
                                                                 <div
                                                                   style={{
                                                                     lineHeight:
                                                                       "1.5",
                                                                   }}
                                                                 >
-                                                                  <bdt className="block-component">
+                                                                  <span className="block-component">
                                                                     <span
                                                                       style={{
                                                                         fontSize: 15,
@@ -1295,14 +1286,14 @@ const TruthPrivacy: React.FC = () => {
                                                                     >
                                                                       <span data-custom-class="body_text" />
                                                                     </span>
-                                                                  </bdt>
+                                                                  </span>
                                                                   <div
                                                                     style={{
                                                                       lineHeight:
                                                                         "1.5",
                                                                     }}
                                                                   >
-                                                                    <bdt className="block-component">
+                                                                    <span className="block-component">
                                                                       <span
                                                                         style={{
                                                                           fontSize: 15,
@@ -1310,7 +1301,7 @@ const TruthPrivacy: React.FC = () => {
                                                                       >
                                                                         <span data-custom-class="body_text" />
                                                                       </span>
-                                                                    </bdt>
+                                                                    </span>
                                                                   </div>
                                                                   <ul>
                                                                     <li
@@ -1355,7 +1346,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           harm.
                                                                         </span>
                                                                       </span>
-                                                                      <bdt className="statement-end-if-in-editor">
+                                                                      <span className="statement-end-if-in-editor">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
@@ -1363,7 +1354,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         >
                                                                           <span data-custom-class="body_text" />
                                                                         </span>
-                                                                      </bdt>
+                                                                      </span>
                                                                     </li>
                                                                   </ul>
                                                                   <div
@@ -1372,7 +1363,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         "1.5",
                                                                     }}
                                                                   >
-                                                                    <bdt className="block-component">
+                                                                    <span className="block-component">
                                                                       <span
                                                                         style={{
                                                                           fontSize: 15,
@@ -1380,8 +1371,8 @@ const TruthPrivacy: React.FC = () => {
                                                                       >
                                                                         <span data-custom-class="body_text" />
                                                                       </span>
-                                                                    </bdt>
-                                                                    <bdt className="block-component">
+                                                                    </span>
+                                                                    <span className="block-component">
                                                                       <span
                                                                         style={{
                                                                           fontSize: 15,
@@ -1389,8 +1380,8 @@ const TruthPrivacy: React.FC = () => {
                                                                       >
                                                                         <span data-custom-class="body_text" />
                                                                       </span>
-                                                                    </bdt>
-                                                                    <bdt className="block-component">
+                                                                    </span>
+                                                                    <span className="block-component">
                                                                       <span
                                                                         style={{
                                                                           fontSize: 15,
@@ -1398,8 +1389,8 @@ const TruthPrivacy: React.FC = () => {
                                                                       >
                                                                         <span data-custom-class="body_text" />
                                                                       </span>
-                                                                    </bdt>
-                                                                    <bdt className="block-component">
+                                                                    </span>
+                                                                    <span className="block-component">
                                                                       <span
                                                                         style={{
                                                                           fontSize: 15,
@@ -1407,7 +1398,7 @@ const TruthPrivacy: React.FC = () => {
                                                                       >
                                                                         <span data-custom-class="body_text" />
                                                                       </span>
-                                                                    </bdt>
+                                                                    </span>
                                                                   </div>
                                                                   <div
                                                                     style={{
@@ -1487,9 +1478,9 @@ const TruthPrivacy: React.FC = () => {
                                                                           legal
                                                                           reason
                                                                           (i.e.
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                           ,
-                                                                          <bdt className="statement-end-if-in-editor" />{" "}
+                                                                          <span className="statement-end-if-in-editor" />{" "}
                                                                           legal
                                                                           basis)
                                                                           to do
@@ -1514,9 +1505,9 @@ const TruthPrivacy: React.FC = () => {
                                                                           enter
                                                                           into
                                                                           or{" "}
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                           fulfill
-                                                                          <bdt className="statement-end-if-in-editor" />{" "}
+                                                                          <span className="statement-end-if-in-editor" />{" "}
                                                                           our
                                                                           contractual
                                                                           obligations,
@@ -1525,9 +1516,9 @@ const TruthPrivacy: React.FC = () => {
                                                                           your
                                                                           rights,
                                                                           or to{" "}
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                           fulfill
-                                                                          <bdt className="statement-end-if-in-editor" />{" "}
+                                                                          <span className="statement-end-if-in-editor" />{" "}
                                                                           our
                                                                           legitimate
                                                                           business
@@ -1541,10 +1532,10 @@ const TruthPrivacy: React.FC = () => {
                                                                       }}
                                                                     >
                                                                       <span data-custom-class="body_text">
-                                                                        <bdt className="block-component" />
+                                                                        <span className="block-component" />
                                                                       </span>
                                                                       <span data-custom-class="body_text">
-                                                                        <bdt className="block-component" />
+                                                                        <span className="block-component" />
                                                                       </span>
                                                                     </span>
                                                                   </div>
@@ -1596,7 +1587,7 @@ const TruthPrivacy: React.FC = () => {
                                                                       }}
                                                                     >
                                                                       <span data-custom-class="body_text">
-                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                        <span className="statement-end-if-in-editor" />
                                                                       </span>
                                                                     </span>
                                                                   </div>
@@ -1682,9 +1673,9 @@ const TruthPrivacy: React.FC = () => {
                                                                           us
                                                                           permission
                                                                           (i.e.
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                           ,
-                                                                          <bdt className="statement-end-if-in-editor" />{" "}
+                                                                          <span className="statement-end-if-in-editor" />{" "}
                                                                           consent)
                                                                           to use
                                                                           your
@@ -1734,7 +1725,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         "1.5",
                                                                     }}
                                                                   >
-                                                                    <bdt className="block-component">
+                                                                    <span className="block-component">
                                                                       <span
                                                                         style={{
                                                                           fontSize: 15,
@@ -1742,14 +1733,14 @@ const TruthPrivacy: React.FC = () => {
                                                                       >
                                                                         <span data-custom-class="body_text" />
                                                                       </span>
-                                                                    </bdt>
+                                                                    </span>
                                                                     <div
                                                                       style={{
                                                                         lineHeight:
                                                                           "1.5",
                                                                       }}
                                                                     >
-                                                                      <bdt className="block-component">
+                                                                      <span className="block-component">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
@@ -1757,8 +1748,8 @@ const TruthPrivacy: React.FC = () => {
                                                                         >
                                                                           <span data-custom-class="body_text" />
                                                                         </span>
-                                                                      </bdt>
-                                                                      <bdt className="block-component">
+                                                                      </span>
+                                                                      <span className="block-component">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
@@ -1766,7 +1757,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         >
                                                                           <span data-custom-class="body_text" />
                                                                         </span>
-                                                                      </bdt>
+                                                                      </span>
                                                                     </div>
                                                                     <ul>
                                                                       <li
@@ -1833,7 +1824,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             we
                                                                             are
                                                                             involved.
-                                                                            <bdt className="statement-end-if-in-editor" />
+                                                                            <span className="statement-end-if-in-editor" />
                                                                             <br />
                                                                           </span>
                                                                         </span>
@@ -1845,7 +1836,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           "1.5",
                                                                       }}
                                                                     >
-                                                                      <bdt className="block-component">
+                                                                      <span className="block-component">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
@@ -1853,7 +1844,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         >
                                                                           <span data-custom-class="body_text" />
                                                                         </span>
-                                                                      </bdt>
+                                                                      </span>
                                                                     </div>
                                                                     <ul>
                                                                       <li
@@ -1909,7 +1900,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             person.
                                                                           </span>
                                                                         </span>
-                                                                        <bdt className="statement-end-if-in-editor">
+                                                                        <span className="statement-end-if-in-editor">
                                                                           <span
                                                                             style={{
                                                                               fontSize: 15,
@@ -1917,7 +1908,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           >
                                                                             <span data-custom-class="body_text" />
                                                                           </span>
-                                                                        </bdt>
+                                                                        </span>
                                                                       </li>
                                                                     </ul>
                                                                     <div
@@ -1926,7 +1917,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           "1.5",
                                                                       }}
                                                                     >
-                                                                      <bdt className="block-component">
+                                                                      <span className="block-component">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
@@ -1934,16 +1925,16 @@ const TruthPrivacy: React.FC = () => {
                                                                         >
                                                                           <span data-custom-class="body_text" />
                                                                         </span>
-                                                                      </bdt>
+                                                                      </span>
                                                                       <span data-custom-class="body_text">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
                                                                           }}
                                                                         >
-                                                                          <bdt className="block-component">
-                                                                            <bdt className="block-component" />
-                                                                          </bdt>
+                                                                          <span className="block-component">
+                                                                            <span className="block-component" />
+                                                                          </span>
                                                                         </span>
                                                                       </span>
                                                                     </div>
@@ -1984,7 +1975,7 @@ const TruthPrivacy: React.FC = () => {
                                                                               </em>
                                                                             </u>
                                                                           </strong>
-                                                                          <bdt className="statement-end-if-in-editor" />
+                                                                          <span className="statement-end-if-in-editor" />
                                                                         </span>
                                                                       </span>
                                                                     </div>
@@ -2019,9 +2010,9 @@ const TruthPrivacy: React.FC = () => {
                                                                           specific
                                                                           permission
                                                                           (i.e.
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                           ,
-                                                                          <bdt className="statement-end-if-in-editor" />{" "}
+                                                                          <span className="statement-end-if-in-editor" />{" "}
                                                                           express
                                                                           consent)
                                                                           to use
@@ -2039,9 +2030,9 @@ const TruthPrivacy: React.FC = () => {
                                                                           can be
                                                                           inferred
                                                                           (i.e.
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                           ,
-                                                                          <bdt className="statement-end-if-in-editor" />{" "}
+                                                                          <span className="statement-end-if-in-editor" />{" "}
                                                                           implied
                                                                           consent).
                                                                           You
@@ -2168,7 +2159,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             fontSize: 15,
                                                                           }}
                                                                         >
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                         </span>
                                                                       </span>
                                                                     </div>
@@ -2192,7 +2183,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             detection
                                                                             and
                                                                             prevention
-                                                                            <bdt className="statement-end-if-in-editor" />
+                                                                            <span className="statement-end-if-in-editor" />
                                                                           </span>
                                                                         </span>
                                                                       </li>
@@ -2203,7 +2194,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           "1.5",
                                                                       }}
                                                                     >
-                                                                      <bdt className="block-component">
+                                                                      <span className="block-component">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
@@ -2211,7 +2202,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         >
                                                                           <span data-custom-class="body_text" />
                                                                         </span>
-                                                                      </bdt>
+                                                                      </span>
                                                                     </div>
                                                                     <ul>
                                                                       <li
@@ -2236,7 +2227,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             met
                                                                           </span>
                                                                         </span>
-                                                                        <bdt className="statement-end-if-in-editor">
+                                                                        <span className="statement-end-if-in-editor">
                                                                           <span
                                                                             style={{
                                                                               fontSize: 15,
@@ -2244,7 +2235,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           >
                                                                             <span data-custom-class="body_text" />
                                                                           </span>
-                                                                        </bdt>
+                                                                        </span>
                                                                       </li>
                                                                     </ul>
                                                                     <div
@@ -2253,7 +2244,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           "1.5",
                                                                       }}
                                                                     >
-                                                                      <bdt className="block-component">
+                                                                      <span className="block-component">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
@@ -2261,7 +2252,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         >
                                                                           <span data-custom-class="body_text" />
                                                                         </span>
-                                                                      </bdt>
+                                                                      </span>
                                                                     </div>
                                                                     <ul>
                                                                       <li
@@ -2298,7 +2289,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             claim
                                                                           </span>
                                                                         </span>
-                                                                        <bdt className="statement-end-if-in-editor">
+                                                                        <span className="statement-end-if-in-editor">
                                                                           <span
                                                                             style={{
                                                                               fontSize: 15,
@@ -2306,7 +2297,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           >
                                                                             <span data-custom-class="body_text" />
                                                                           </span>
-                                                                        </bdt>
+                                                                        </span>
                                                                       </li>
                                                                     </ul>
                                                                     <div
@@ -2315,7 +2306,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           "1.5",
                                                                       }}
                                                                     >
-                                                                      <bdt className="block-component">
+                                                                      <span className="block-component">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
@@ -2323,7 +2314,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         >
                                                                           <span data-custom-class="body_text" />
                                                                         </span>
-                                                                      </bdt>
+                                                                      </span>
                                                                     </div>
                                                                     <ul>
                                                                       <li
@@ -2353,7 +2344,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             kin
                                                                           </span>
                                                                         </span>
-                                                                        <bdt className="statement-end-if-in-editor">
+                                                                        <span className="statement-end-if-in-editor">
                                                                           <span
                                                                             style={{
                                                                               fontSize: 15,
@@ -2361,7 +2352,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           >
                                                                             <span data-custom-class="body_text" />
                                                                           </span>
-                                                                        </bdt>
+                                                                        </span>
                                                                       </li>
                                                                     </ul>
                                                                     <div
@@ -2376,7 +2367,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             fontSize: 15,
                                                                           }}
                                                                         >
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                         </span>
                                                                       </span>
                                                                     </div>
@@ -2412,7 +2403,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             of
                                                                             financial
                                                                             abuse
-                                                                            <bdt className="statement-end-if-in-editor" />
+                                                                            <span className="statement-end-if-in-editor" />
                                                                           </span>
                                                                         </span>
                                                                       </li>
@@ -2429,7 +2420,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             fontSize: 15,
                                                                           }}
                                                                         >
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                         </span>
                                                                       </span>
                                                                     </div>
@@ -2491,7 +2482,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             Canada
                                                                             or a
                                                                             province
-                                                                            <bdt className="statement-end-if-in-editor" />
+                                                                            <span className="statement-end-if-in-editor" />
                                                                           </span>
                                                                         </span>
                                                                       </li>
@@ -2508,7 +2499,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             fontSize: 15,
                                                                           }}
                                                                         >
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                         </span>
                                                                       </span>
                                                                     </div>
@@ -2548,7 +2539,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             production
                                                                             of
                                                                             records
-                                                                            <bdt className="statement-end-if-in-editor" />
+                                                                            <span className="statement-end-if-in-editor" />
                                                                           </span>
                                                                         </span>
                                                                       </li>
@@ -2559,7 +2550,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           "1.5",
                                                                       }}
                                                                     >
-                                                                      <bdt className="block-component">
+                                                                      <span className="block-component">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
@@ -2567,7 +2558,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         >
                                                                           <span data-custom-class="body_text" />
                                                                         </span>
-                                                                      </bdt>
+                                                                      </span>
                                                                     </div>
                                                                     <ul>
                                                                       <li
@@ -2612,7 +2603,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             information
                                                                             was
                                                                             produced
-                                                                            <bdt className="statement-end-if-in-editor" />
+                                                                            <span className="statement-end-if-in-editor" />
                                                                           </span>
                                                                         </span>
                                                                       </li>
@@ -2629,7 +2620,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         }}
                                                                       >
                                                                         <span data-custom-class="body_text">
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                         </span>
                                                                       </span>
                                                                     </div>
@@ -2657,7 +2648,7 @@ const TruthPrivacy: React.FC = () => {
                                                                             or
                                                                             literary
                                                                             purposes
-                                                                            <bdt className="statement-end-if-in-editor" />
+                                                                            <span className="statement-end-if-in-editor" />
                                                                           </span>
                                                                         </span>
                                                                       </li>
@@ -2674,7 +2665,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         }}
                                                                       >
                                                                         <span data-custom-class="body_text">
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                         </span>
                                                                       </span>
                                                                     </div>
@@ -2704,9 +2695,9 @@ const TruthPrivacy: React.FC = () => {
                                                                             the
                                                                             regulations
                                                                           </span>
-                                                                          <bdt className="statement-end-if-in-editor">
+                                                                          <span className="statement-end-if-in-editor">
                                                                             <span data-custom-class="body_text" />
-                                                                          </bdt>
+                                                                          </span>
                                                                         </span>
                                                                       </li>
                                                                     </ul>
@@ -2716,7 +2707,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           "1.5",
                                                                       }}
                                                                     >
-                                                                      <bdt className="statement-end-if-in-editor">
+                                                                      <span className="statement-end-if-in-editor">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
@@ -2724,8 +2715,8 @@ const TruthPrivacy: React.FC = () => {
                                                                         >
                                                                           <span data-custom-class="body_text" />
                                                                         </span>
-                                                                      </bdt>
-                                                                      <bdt className="statement-end-if-in-editor">
+                                                                      </span>
+                                                                      <span className="statement-end-if-in-editor">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
@@ -2733,7 +2724,7 @@ const TruthPrivacy: React.FC = () => {
                                                                         >
                                                                           <span data-custom-class="body_text" />
                                                                         </span>
-                                                                      </bdt>
+                                                                      </span>
                                                                     </div>
                                                                     <div
                                                                       style={{
@@ -2856,7 +2847,7 @@ const TruthPrivacy: React.FC = () => {
                                                                               with
                                                                               the
                                                                               following{" "}
-                                                                              <bdt className="block-component" />
+                                                                              <span className="block-component" />
                                                                               third
                                                                               parties.
                                                                             </em>
@@ -2885,7 +2876,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           }}
                                                                         >
                                                                           <span data-custom-class="body_text">
-                                                                            <bdt className="block-component" />
+                                                                            <span className="block-component" />
                                                                           </span>
                                                                         </span>
                                                                       </span>
@@ -2911,7 +2902,7 @@ const TruthPrivacy: React.FC = () => {
                                                                       >
                                                                         <span data-custom-class="body_text">
                                                                           We{" "}
-                                                                          <bdt className="block-component" />
+                                                                          <span className="block-component" />
                                                                           may
                                                                           need
                                                                           to
@@ -2985,13 +2976,13 @@ const TruthPrivacy: React.FC = () => {
                                                                           "1.5",
                                                                       }}
                                                                     >
-                                                                      <bdt className="block-component">
+                                                                      <span className="block-component">
                                                                         <span
                                                                           style={{
                                                                             fontSize: 15,
                                                                           }}
                                                                         />
-                                                                      </bdt>
+                                                                      </span>
                                                                       <div
                                                                         style={{
                                                                           lineHeight:
@@ -3004,7 +2995,7 @@ const TruthPrivacy: React.FC = () => {
                                                                           }}
                                                                         >
                                                                           <span data-custom-class="body_text">
-                                                                            <bdt className="block-component" />
+                                                                            <span className="block-component" />
                                                                           </span>
                                                                         </span>
                                                                         <div
@@ -3018,9 +3009,9 @@ const TruthPrivacy: React.FC = () => {
                                                                               fontSize: 15,
                                                                             }}
                                                                           >
-                                                                            <bdt className="block-component">
+                                                                            <span className="block-component">
                                                                               <span data-custom-class="body_text" />
-                                                                            </bdt>
+                                                                            </span>
                                                                           </span>
                                                                           <div
                                                                             style={{
@@ -3028,7 +3019,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                 "1.5",
                                                                             }}
                                                                           >
-                                                                            <bdt className="block-component">
+                                                                            <span className="block-component">
                                                                               <span
                                                                                 style={{
                                                                                   fontSize: 15,
@@ -3036,14 +3027,14 @@ const TruthPrivacy: React.FC = () => {
                                                                               >
                                                                                 <span data-custom-class="body_text" />
                                                                               </span>
-                                                                            </bdt>
+                                                                            </span>
                                                                             <div
                                                                               style={{
                                                                                 lineHeight:
                                                                                   "1.5",
                                                                               }}
                                                                             >
-                                                                              <bdt className="block-component">
+                                                                              <span className="block-component">
                                                                                 <span
                                                                                   style={{
                                                                                     fontSize: 15,
@@ -3051,14 +3042,14 @@ const TruthPrivacy: React.FC = () => {
                                                                                 >
                                                                                   <span data-custom-class="body_text" />
                                                                                 </span>
-                                                                              </bdt>
+                                                                              </span>
                                                                               <div
                                                                                 style={{
                                                                                   lineHeight:
                                                                                     "1.5",
                                                                                 }}
                                                                               >
-                                                                                <bdt className="block-component">
+                                                                                <span className="block-component">
                                                                                   <span
                                                                                     style={{
                                                                                       fontSize: 15,
@@ -3066,14 +3057,14 @@ const TruthPrivacy: React.FC = () => {
                                                                                   >
                                                                                     <span data-custom-class="body_text" />
                                                                                   </span>
-                                                                                </bdt>
+                                                                                </span>
                                                                                 <div
                                                                                   style={{
                                                                                     lineHeight:
                                                                                       "1.5",
                                                                                   }}
                                                                                 >
-                                                                                  <bdt className="block-component">
+                                                                                  <span className="block-component">
                                                                                     <span
                                                                                       style={{
                                                                                         fontSize: 15,
@@ -3081,7 +3072,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                     >
                                                                                       <span data-custom-class="body_text" />
                                                                                     </span>
-                                                                                  </bdt>
+                                                                                  </span>
                                                                                   <span
                                                                                     style={{
                                                                                       color:
@@ -3111,9 +3102,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                                 "rgb(89, 89, 89)",
                                                                                             }}
                                                                                           >
-                                                                                            <bdt className="block-component">
+                                                                                            <span className="block-component">
                                                                                               <span data-custom-class="heading_1" />
-                                                                                            </bdt>
+                                                                                            </span>
                                                                                           </span>
                                                                                         </span>
                                                                                       </span>
@@ -3164,13 +3155,13 @@ const TruthPrivacy: React.FC = () => {
                                                                                                   }}
                                                                                                 >
                                                                                                   <span data-custom-class="body_text">
-                                                                                                    <bdt className="block-component" />
+                                                                                                    <span className="block-component" />
                                                                                                   </span>
-                                                                                                  <bdt className="block-component">
+                                                                                                  <span className="block-component">
                                                                                                     <span data-custom-class="body_text">
-                                                                                                      <bdt className="block-component" />
+                                                                                                      <span className="block-component" />
                                                                                                     </span>
-                                                                                                  </bdt>
+                                                                                                  </span>
                                                                                                 </span>
                                                                                               </span>
                                                                                             </span>
@@ -3293,9 +3284,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                           as
                                                                                           necessary
                                                                                           to{" "}
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           fulfill
-                                                                                          <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                          <span className="statement-end-if-in-editor" />{" "}
                                                                                           the
                                                                                           purposes
                                                                                           outlined
@@ -3384,7 +3375,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         other
                                                                                         legal
                                                                                         requirements).
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                       </span>
                                                                                     </span>
                                                                                   </span>
@@ -3436,9 +3427,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         either
                                                                                         delete
                                                                                         or{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         anonymize
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         such
                                                                                         information,
                                                                                         or,
@@ -3484,7 +3475,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                               "rgb(89, 89, 89)",
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                         </span>
                                                                                         <span
                                                                                           style={{
@@ -3494,7 +3485,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           }}
                                                                                         >
                                                                                           <span data-custom-class="body_text">
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="block-component" />
                                                                                           </span>
                                                                                         </span>
                                                                                       </span>
@@ -3613,18 +3604,18 @@ const TruthPrivacy: React.FC = () => {
                                                                                           or
                                                                                           market
                                                                                           to{" "}
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           children
                                                                                           under
                                                                                           18
                                                                                           years
                                                                                           of
                                                                                           age
-                                                                                          <bdt className="else-block" />
+                                                                                          <span className="else-block" />
 
                                                                                           .
                                                                                         </em>
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                       </span>
                                                                                     </span>
                                                                                   </span>
@@ -3770,20 +3761,20 @@ const TruthPrivacy: React.FC = () => {
                                                                                           }}
                                                                                         >
                                                                                           <span data-custom-class="body_text">
-                                                                                            <bdt className="block-component" />
-                                                                                            <bdt className="question">
+                                                                                            <span className="block-component" />
+                                                                                            <span className="question">
                                                                                               gaugerderek@gmail.com
-                                                                                            </bdt>
-                                                                                            <bdt className="else-block" />
+                                                                                            </span>
+                                                                                            <span className="else-block" />
                                                                                           </span>
                                                                                         </span>
 
                                                                                         .
                                                                                       </span>
                                                                                       <span data-custom-class="body_text">
-                                                                                        <bdt className="else-block">
-                                                                                          <bdt className="block-component" />
-                                                                                        </bdt>
+                                                                                        <span className="else-block">
+                                                                                          <span className="block-component" />
+                                                                                        </span>
                                                                                       </span>
                                                                                     </span>
                                                                                   </span>
@@ -3903,7 +3894,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                             >
                                                                                               <span data-custom-class="body_text">
                                                                                                 <em>
-                                                                                                  <bdt className="block-component" />
+                                                                                                  <span className="block-component" />
                                                                                                 </em>
                                                                                               </span>
                                                                                             </span>
@@ -3913,7 +3904,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           regions,
                                                                                           such
                                                                                           as{" "}
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           the
                                                                                           European
                                                                                           Economic
@@ -3925,7 +3916,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           Switzerland,
                                                                                           and
                                                                                           Canada
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
 
                                                                                           ,
                                                                                           you
@@ -3956,7 +3947,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                             >
                                                                                               <span data-custom-class="body_text">
                                                                                                 <em>
-                                                                                                  <bdt className="statement-end-if-in-editor" />
+                                                                                                  <span className="statement-end-if-in-editor" />
                                                                                                 </em>
                                                                                               </span>
                                                                                             </span>
@@ -3985,7 +3976,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                               fontSize: 15,
                                                                                             }}
                                                                                           >
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="block-component" />
                                                                                           </span>
                                                                                         </span>
                                                                                       </span>
@@ -4025,14 +4016,14 @@ const TruthPrivacy: React.FC = () => {
                                                                                         some
                                                                                         regions
                                                                                         (like{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         the
                                                                                         EEA,
                                                                                         UK,
                                                                                         Switzerland,
                                                                                         and
                                                                                         Canada
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         ),
                                                                                         you
                                                                                         have
@@ -4126,9 +4117,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         in
                                                                                         the
                                                                                         section{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         "
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </span>
                                                                                   </span>
@@ -4178,9 +4169,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                       }}
                                                                                     >
                                                                                       <span data-custom-class="body_text">
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         "
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         below.
                                                                                       </span>
                                                                                     </span>
@@ -4230,7 +4221,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         data
                                                                                         protection
                                                                                         laws.
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                       </span>
                                                                                     </span>
                                                                                   </span>
@@ -4534,7 +4525,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         your
                                                                                         personal
                                                                                         information,
-                                                                                        <bdt className="block-component" />{" "}
+                                                                                        <span className="block-component" />{" "}
                                                                                         which
                                                                                         may
                                                                                         be
@@ -4547,7 +4538,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         the
                                                                                         applicable
                                                                                         law,
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         you
                                                                                         have
                                                                                         the
@@ -4579,9 +4570,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         in
                                                                                         the
                                                                                         section{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         "
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </span>
                                                                                   </span>
@@ -4631,11 +4622,11 @@ const TruthPrivacy: React.FC = () => {
                                                                                       }}
                                                                                     >
                                                                                       <span data-custom-class="body_text">
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         "
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         below
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
 
                                                                                         .
                                                                                       </span>
@@ -4679,12 +4670,12 @@ const TruthPrivacy: React.FC = () => {
                                                                                       its
                                                                                       withdrawal
                                                                                       nor,
-                                                                                      <bdt className="block-component" />{" "}
+                                                                                      <span className="block-component" />{" "}
                                                                                       when
                                                                                       applicable
                                                                                       law
                                                                                       allows,
-                                                                                      <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                      <span className="statement-end-if-in-editor" />{" "}
                                                                                       will
                                                                                       it
                                                                                       affect
@@ -4704,10 +4695,10 @@ const TruthPrivacy: React.FC = () => {
                                                                                       other
                                                                                       than
                                                                                       consent.
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </span>
-                                                                                  <bdt className="block-component">
+                                                                                  <span className="block-component">
                                                                                     <span
                                                                                       style={{
                                                                                         fontSize: 15,
@@ -4715,7 +4706,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                     >
                                                                                       <span data-custom-class="body_text" />
                                                                                     </span>
-                                                                                  </bdt>
+                                                                                  </span>
                                                                                   <span
                                                                                     style={{
                                                                                       fontSize: 15,
@@ -4765,7 +4756,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                           "rgb(89, 89, 89)",
                                                                                                       }}
                                                                                                     >
-                                                                                                      <bdt className="block-component" />
+                                                                                                      <span className="block-component" />
                                                                                                     </span>
                                                                                                   </span>
                                                                                                 </span>
@@ -4776,7 +4767,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                       </span>
                                                                                     </span>
                                                                                   </span>
-                                                                                  <bdt className="block-component">
+                                                                                  <span className="block-component">
                                                                                     <span
                                                                                       style={{
                                                                                         fontSize: 15,
@@ -4784,7 +4775,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                     >
                                                                                       <span data-custom-class="body_text" />
                                                                                     </span>
-                                                                                  </bdt>
+                                                                                  </span>
                                                                                 </div>
                                                                                 <div
                                                                                   style={{
@@ -4821,14 +4812,14 @@ const TruthPrivacy: React.FC = () => {
                                                                                       email
                                                                                       us
                                                                                       at{" "}
-                                                                                      <bdt className="question">
+                                                                                      <span className="question">
                                                                                         gaugerderek@gmail.com
-                                                                                      </bdt>
+                                                                                      </span>
 
                                                                                       .
                                                                                     </span>
                                                                                   </span>
-                                                                                  <bdt className="statement-end-if-in-editor">
+                                                                                  <span className="statement-end-if-in-editor">
                                                                                     <span
                                                                                       style={{
                                                                                         fontSize: 15,
@@ -4836,7 +4827,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                     >
                                                                                       <span data-custom-class="body_text" />
                                                                                     </span>
-                                                                                  </bdt>
+                                                                                  </span>
                                                                                 </div>
                                                                                 <div
                                                                                   style={{
@@ -4946,9 +4937,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         a
                                                                                         Do-Not-Track
                                                                                         (
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         "DNT"
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
 
                                                                                         )
                                                                                         feature
@@ -4982,18 +4973,18 @@ const TruthPrivacy: React.FC = () => {
                                                                                         technology
                                                                                         standard
                                                                                         for{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         recognizing
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         and
                                                                                         implementing
                                                                                         DNT
                                                                                         signals
                                                                                         has
                                                                                         been{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         finalized
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                         .
                                                                                         As
                                                                                         such,
@@ -5050,7 +5041,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         this
                                                                                         privacy
                                                                                         notice.
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                       </span>
                                                                                     </span>
                                                                                   </span>
@@ -5165,53 +5156,53 @@ const TruthPrivacy: React.FC = () => {
                                                                                           a
                                                                                           resident
                                                                                           of{" "}
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="block-component" />
-                                                                                          <bdt className="forloop-component" />{" "}
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="block-component" />
+                                                                                          <span className="forloop-component" />{" "}
                                                                                           California
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="block-component" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="block-component" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="forloop-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="block-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="block-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="forloop-component" />
                                                                                           ,
                                                                                           Colorado
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="statement-end-if-in-editor" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="block-component" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="forloop-component">
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="statement-end-if-in-editor" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="block-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="forloop-component">
                                                                                             ,
                                                                                             Connecticut
-                                                                                          </bdt>
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="statement-end-if-in-editor" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="block-component" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="forloop-component">
+                                                                                          </span>
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="statement-end-if-in-editor" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="block-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="forloop-component">
                                                                                             ,
                                                                                             Utah
-                                                                                          </bdt>
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="statement-end-if-in-editor" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="block-component" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="forloop-component" />{" "}
+                                                                                          </span>
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="statement-end-if-in-editor" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="block-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="forloop-component" />{" "}
                                                                                           or
                                                                                           Virginia
-                                                                                          <bdt className="forloop-component" />
-                                                                                          <bdt className="else-block" />
-                                                                                          <bdt className="forloop-component" />
+                                                                                          <span className="forloop-component" />
+                                                                                          <span className="else-block" />
+                                                                                          <span className="forloop-component" />
 
                                                                                           ,
                                                                                           you
@@ -5585,13 +5576,13 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component">
-                                                                                                  <bdt className="block-component" />
-                                                                                                </bdt>
+                                                                                                <span className="block-component">
+                                                                                                  <span className="block-component" />
+                                                                                                </span>
                                                                                                 NO
-                                                                                                <bdt className="statement-end-if-in-editor">
-                                                                                                  <bdt className="block-component" />
-                                                                                                </bdt>
+                                                                                                <span className="statement-end-if-in-editor">
+                                                                                                  <span className="block-component" />
+                                                                                                </span>
                                                                                               </span>
                                                                                             </span>
                                                                                           </span>
@@ -5614,7 +5605,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                       "1.5",
                                                                                   }}
                                                                                 >
-                                                                                  <bdt className="block-component" />
+                                                                                  <span className="block-component" />
                                                                                 </div>
                                                                                 <table
                                                                                   style={{
@@ -5760,16 +5751,16 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="forloop-component">
-                                                                                                  <bdt className="block-component">
-                                                                                                    <bdt className="block-component">
+                                                                                                <span className="forloop-component">
+                                                                                                  <span className="block-component">
+                                                                                                    <span className="block-component">
                                                                                                       NO
-                                                                                                      <bdt className="statement-end-if-in-editor">
-                                                                                                        <bdt className="block-component" />
-                                                                                                      </bdt>
-                                                                                                    </bdt>
-                                                                                                  </bdt>
-                                                                                                </bdt>
+                                                                                                      <span className="statement-end-if-in-editor">
+                                                                                                        <span className="block-component" />
+                                                                                                      </span>
+                                                                                                    </span>
+                                                                                                  </span>
+                                                                                                </span>
                                                                                               </span>
                                                                                             </span>
                                                                                           </span>
@@ -5792,7 +5783,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                       "1.5",
                                                                                   }}
                                                                                 >
-                                                                                  <bdt className="block-component" />
+                                                                                  <span className="block-component" />
                                                                                 </div>
                                                                                 <table
                                                                                   style={{
@@ -5835,9 +5826,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                                 C
-                                                                                                <bdt className="else-block" />
+                                                                                                <span className="else-block" />
 
                                                                                                 .
                                                                                                 Protected
@@ -5921,15 +5912,15 @@ const TruthPrivacy: React.FC = () => {
                                                                                               "1.5",
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="forloop-component">
+                                                                                          <span className="forloop-component">
                                                                                             <span data-custom-class="body_text">
-                                                                                              <bdt className="block-component" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                               NO
-                                                                                              <bdt className="statement-end-if-in-editor" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="statement-end-if-in-editor" />
+                                                                                              <span className="block-component" />
                                                                                             </span>
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </div>
                                                                                         <div
                                                                                           style={{
@@ -5975,9 +5966,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                                 D
-                                                                                                <bdt className="else-block" />
+                                                                                                <span className="else-block" />
 
                                                                                                 .
                                                                                                 Commercial
@@ -6059,16 +6050,16 @@ const TruthPrivacy: React.FC = () => {
                                                                                               "1.5",
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="forloop-component">
+                                                                                          <span className="forloop-component">
                                                                                             <span data-custom-class="body_text">
-                                                                                              <bdt className="block-component" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                               NO
-                                                                                              <bdt className="statement-end-if-in-editor">
-                                                                                                <bdt className="block-component" />
-                                                                                              </bdt>
+                                                                                              <span className="statement-end-if-in-editor">
+                                                                                                <span className="block-component" />
+                                                                                              </span>
                                                                                             </span>
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </div>
                                                                                         <div
                                                                                           style={{
@@ -6114,9 +6105,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                                 E
-                                                                                                <bdt className="else-block" />
+                                                                                                <span className="else-block" />
 
                                                                                                 .
                                                                                                 Biometric
@@ -6192,17 +6183,17 @@ const TruthPrivacy: React.FC = () => {
                                                                                               "1.5",
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="forloop-component">
+                                                                                          <span className="forloop-component">
                                                                                             <span data-custom-class="body_text">
-                                                                                              <bdt className="block-component">
-                                                                                                <bdt className="block-component">
+                                                                                              <span className="block-component">
+                                                                                                <span className="block-component">
                                                                                                   NO
-                                                                                                </bdt>
-                                                                                                <bdt className="statement-end-if-in-editor" />
-                                                                                                <bdt className="block-component" />
-                                                                                              </bdt>
+                                                                                                </span>
+                                                                                                <span className="statement-end-if-in-editor" />
+                                                                                                <span className="block-component" />
+                                                                                              </span>
                                                                                             </span>
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </div>
                                                                                         <div
                                                                                           style={{
@@ -6248,9 +6239,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                                 F
-                                                                                                <bdt className="else-block" />
+                                                                                                <span className="else-block" />
 
                                                                                                 .
                                                                                                 Internet
@@ -6300,9 +6291,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                                 search
                                                                                                 history,
                                                                                                 online{" "}
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                                 behavior
-                                                                                                <bdt className="statement-end-if-in-editor" />
+                                                                                                <span className="statement-end-if-in-editor" />
 
                                                                                                 ,
                                                                                                 interest
@@ -6350,15 +6341,15 @@ const TruthPrivacy: React.FC = () => {
                                                                                               "1.5",
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="forloop-component">
+                                                                                          <span className="forloop-component">
                                                                                             <span data-custom-class="body_text">
-                                                                                              <bdt className="block-component" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                               NO
-                                                                                              <bdt className="statement-end-if-in-editor" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="statement-end-if-in-editor" />
+                                                                                              <span className="block-component" />
                                                                                             </span>
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </div>
                                                                                         <div
                                                                                           style={{
@@ -6404,9 +6395,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                                 G
-                                                                                                <bdt className="else-block" />
+                                                                                                <span className="else-block" />
 
                                                                                                 .
                                                                                                 Geolocation
@@ -6481,15 +6472,15 @@ const TruthPrivacy: React.FC = () => {
                                                                                               "1.5",
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="forloop-component">
+                                                                                          <span className="forloop-component">
                                                                                             <span data-custom-class="body_text">
-                                                                                              <bdt className="block-component" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                               NO
-                                                                                              <bdt className="statement-end-if-in-editor" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="statement-end-if-in-editor" />
+                                                                                              <span className="block-component" />
                                                                                             </span>
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </div>
                                                                                         <div
                                                                                           style={{
@@ -6535,9 +6526,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                                 H
-                                                                                                <bdt className="else-block" />
+                                                                                                <span className="else-block" />
 
                                                                                                 .
                                                                                                 Audio,
@@ -6630,15 +6621,15 @@ const TruthPrivacy: React.FC = () => {
                                                                                               "1.5",
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="forloop-component">
+                                                                                          <span className="forloop-component">
                                                                                             <span data-custom-class="body_text">
-                                                                                              <bdt className="block-component" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                               NO
-                                                                                              <bdt className="statement-end-if-in-editor" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="statement-end-if-in-editor" />
+                                                                                              <span className="block-component" />
                                                                                             </span>
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </div>
                                                                                         <div
                                                                                           style={{
@@ -6684,9 +6675,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                                 I
-                                                                                                <bdt className="else-block" />
+                                                                                                <span className="else-block" />
 
                                                                                                 .
                                                                                                 Professional
@@ -6791,15 +6782,15 @@ const TruthPrivacy: React.FC = () => {
                                                                                               "1.5",
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="forloop-component">
+                                                                                          <span className="forloop-component">
                                                                                             <span data-custom-class="body_text">
-                                                                                              <bdt className="block-component" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                               NO
-                                                                                              <bdt className="statement-end-if-in-editor" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="statement-end-if-in-editor" />
+                                                                                              <span className="block-component" />
                                                                                             </span>
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </div>
                                                                                         <div
                                                                                           style={{
@@ -6845,9 +6836,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                                 J
-                                                                                                <bdt className="else-block" />
+                                                                                                <span className="else-block" />
 
                                                                                                 .
                                                                                                 Education
@@ -6925,15 +6916,15 @@ const TruthPrivacy: React.FC = () => {
                                                                                               "1.5",
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="forloop-component">
+                                                                                          <span className="forloop-component">
                                                                                             <span data-custom-class="body_text">
-                                                                                              <bdt className="block-component" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                               NO
-                                                                                              <bdt className="statement-end-if-in-editor" />
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="statement-end-if-in-editor" />
+                                                                                              <span className="block-component" />
                                                                                             </span>
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </div>
                                                                                         <div
                                                                                           style={{
@@ -6978,9 +6969,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                                 K
-                                                                                                <bdt className="else-block" />
+                                                                                                <span className="else-block" />
 
                                                                                                 .
                                                                                                 Inferences
@@ -7087,7 +7078,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           }}
                                                                                         >
                                                                                           <span data-custom-class="body_text">
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="block-component" />
                                                                                             NO
                                                                                             <span
                                                                                               style={{
@@ -7111,7 +7102,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                     }}
                                                                                                   >
                                                                                                     <span data-custom-class="body_text">
-                                                                                                      <bdt className="statement-end-if-in-editor" />
+                                                                                                      <span className="statement-end-if-in-editor" />
                                                                                                     </span>
                                                                                                   </span>
                                                                                                 </span>
@@ -7143,9 +7134,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         }}
                                                                                       >
                                                                                         <span data-custom-class="body_text">
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           L
-                                                                                          <bdt className="else-block" />
+                                                                                          <span className="else-block" />
 
                                                                                           .
                                                                                           Sensitive
@@ -7163,9 +7154,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                             "1.5",
                                                                                         }}
                                                                                       >
-                                                                                        <bdt className="block-component">
+                                                                                        <span className="block-component">
                                                                                           <span data-custom-class="body_text" />
-                                                                                        </bdt>
+                                                                                        </span>
                                                                                       </td>
                                                                                       <td
                                                                                         style={{
@@ -7194,13 +7185,13 @@ const TruthPrivacy: React.FC = () => {
                                                                                               "1.5",
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="block-component">
+                                                                                          <span className="block-component">
                                                                                             <span data-custom-class="body_text" />
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                           NO
-                                                                                          <bdt className="statement-end-if-in-editor">
+                                                                                          <span className="statement-end-if-in-editor">
                                                                                             <span data-custom-class="body_text" />
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </div>
                                                                                         <div
                                                                                           data-empty="true"
@@ -7229,9 +7220,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                       "1.5",
                                                                                   }}
                                                                                 >
-                                                                                  <bdt className="block-component">
+                                                                                  <span className="block-component">
                                                                                     <span data-custom-class="body_text" />
-                                                                                  </bdt>
+                                                                                  </span>
                                                                                   <div
                                                                                     style={{
                                                                                       lineHeight:
@@ -7253,7 +7244,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         }}
                                                                                       >
                                                                                         <span data-custom-class="body_text">
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                         </span>
                                                                                       </span>
                                                                                     </span>
@@ -7332,7 +7323,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                   }}
                                                                                                 >
                                                                                                   <span data-custom-class="body_text">
-                                                                                                    <bdt className="block-component" />
+                                                                                                    <span className="block-component" />
                                                                                                   </span>
                                                                                                 </span>
                                                                                               </span>
@@ -7416,7 +7407,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                               }}
                                                                                                             >
                                                                                                               <span data-custom-class="body_text">
-                                                                                                                <bdt className="statement-end-if-in-editor" />
+                                                                                                                <span className="statement-end-if-in-editor" />
                                                                                                               </span>
                                                                                                             </span>
                                                                                                           </span>
@@ -7471,7 +7462,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                   }}
                                                                                                 >
                                                                                                   <span data-custom-class="body_text">
-                                                                                                    <bdt className="block-component" />
+                                                                                                    <span className="block-component" />
                                                                                                   </span>
                                                                                                 </span>
                                                                                               </span>
@@ -7555,7 +7546,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                               }}
                                                                                                             >
                                                                                                               <span data-custom-class="body_text">
-                                                                                                                <bdt className="statement-end-if-in-editor" />
+                                                                                                                <span className="statement-end-if-in-editor" />
                                                                                                               </span>
                                                                                                             </span>
                                                                                                           </span>
@@ -7610,7 +7601,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                   }}
                                                                                                 >
                                                                                                   <span data-custom-class="body_text">
-                                                                                                    <bdt className="block-component" />
+                                                                                                    <span className="block-component" />
                                                                                                   </span>
                                                                                                 </span>
                                                                                               </span>
@@ -7700,7 +7691,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                               }}
                                                                                                             >
                                                                                                               <span data-custom-class="body_text">
-                                                                                                                <bdt className="statement-end-if-in-editor" />
+                                                                                                                <span className="statement-end-if-in-editor" />
                                                                                                               </span>
                                                                                                             </span>
                                                                                                           </span>
@@ -7783,9 +7774,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                       in
                                                                                       the
                                                                                       section,{" "}
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                       "
-                                                                                      <bdt className="statement-end-if-in-editor" />
+                                                                                      <span className="statement-end-if-in-editor" />
                                                                                     </span>
                                                                                     <a
                                                                                       data-custom-class="link"
@@ -7812,18 +7803,18 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
 
                                                                                       "
                                                                                     </span>
-                                                                                    <bdt className="statement-end-if-in-editor">
+                                                                                    <span className="statement-end-if-in-editor">
                                                                                       <span
                                                                                         data-custom-class="body_text"
                                                                                         style={{
                                                                                           fontSize: 15,
                                                                                         }}
                                                                                       />
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                   </div>
                                                                                   <div
                                                                                     style={{
@@ -7862,7 +7853,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                             }}
                                                                                           >
                                                                                             <span data-custom-class="body_text">
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                             </span>
                                                                                           </span>
                                                                                         </span>
@@ -7966,9 +7957,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                           in
                                                                                           the
                                                                                           section,{" "}
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           "
-                                                                                          <bdt className="statement-end-if-in-editor" />
+                                                                                          <span className="statement-end-if-in-editor" />
                                                                                         </span>
                                                                                       </span>
                                                                                     </span>
@@ -8018,9 +8009,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         }}
                                                                                       >
                                                                                         <span data-custom-class="body_text">
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           "
-                                                                                          <bdt className="statement-end-if-in-editor" />
+                                                                                          <span className="statement-end-if-in-editor" />
                                                                                         </span>
                                                                                       </span>
                                                                                     </span>
@@ -8082,9 +8073,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                           considered
                                                                                           to
                                                                                           be{" "}
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           "selling"
-                                                                                          <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                          <span className="statement-end-if-in-editor" />{" "}
                                                                                           of
                                                                                           your
                                                                                           personal
@@ -8097,7 +8088,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                             }}
                                                                                           >
                                                                                             <span data-custom-class="body_text">
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                             </span>
                                                                                           </span>
                                                                                         </span>
@@ -8206,12 +8197,12 @@ const TruthPrivacy: React.FC = () => {
                                                                                                     }}
                                                                                                   >
                                                                                                     <span data-custom-class="body_text">
-                                                                                                      <bdt className="statement-end-if-in-editor" />
+                                                                                                      <span className="statement-end-if-in-editor" />
                                                                                                     </span>
                                                                                                   </span>
                                                                                                 </span>
                                                                                               </span>
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                             </span>
                                                                                           </span>
                                                                                         </span>
@@ -8225,11 +8216,11 @@ const TruthPrivacy: React.FC = () => {
                                                                                         }}
                                                                                       >
                                                                                         <span data-custom-class="body_text">
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                         </span>
                                                                                       </span>
                                                                                     </span>
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
                                                                                   </div>
                                                                                   <div
                                                                                     style={{
@@ -8286,11 +8277,11 @@ const TruthPrivacy: React.FC = () => {
                                                                                       known
                                                                                       as
                                                                                       the{" "}
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                       "Shine
                                                                                       The
                                                                                       Light"
-                                                                                      <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                      <span className="statement-end-if-in-editor" />{" "}
                                                                                       law
                                                                                       permits
                                                                                       our
@@ -8508,9 +8499,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                       our
                                                                                       systems
                                                                                       (e.g.
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                       ,
-                                                                                      <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                      <span className="statement-end-if-in-editor" />{" "}
                                                                                       backups,
                                                                                       etc.).
                                                                                     </span>
@@ -8637,9 +8628,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         Regulations
                                                                                         defines
                                                                                         a{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         "residents"
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         as:
                                                                                       </span>
                                                                                     </span>
@@ -8769,9 +8760,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         are
                                                                                         defined
                                                                                         as{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         "non-residents."
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </span>
                                                                                   </div>
@@ -8807,9 +8798,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         this
                                                                                         definition
                                                                                         of{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         "resident"
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         applies
                                                                                         to
                                                                                         you,
@@ -9145,7 +9136,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                         }}
                                                                                                       >
                                                                                                         <span data-custom-class="body_text">
-                                                                                                          <bdt className="block-component" />
+                                                                                                          <span className="block-component" />
                                                                                                         </span>
                                                                                                       </span>
                                                                                                     </span>
@@ -9212,7 +9203,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                       }}
                                                                                                     >
                                                                                                       <span data-custom-class="body_text">
-                                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                                        <span className="statement-end-if-in-editor" />
                                                                                                       </span>
                                                                                                     </span>
                                                                                                   </span>
@@ -9278,7 +9269,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                         }}
                                                                                                       >
                                                                                                         <span data-custom-class="body_text">
-                                                                                                          <bdt className="block-component" />
+                                                                                                          <span className="block-component" />
                                                                                                         </span>
                                                                                                       </span>
                                                                                                     </span>
@@ -9345,7 +9336,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                       }}
                                                                                                     >
                                                                                                       <span data-custom-class="body_text">
-                                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                                        <span className="statement-end-if-in-editor" />
                                                                                                       </span>
                                                                                                     </span>
                                                                                                   </span>
@@ -9411,7 +9402,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                         }}
                                                                                                       >
                                                                                                         <span data-custom-class="body_text">
-                                                                                                          <bdt className="block-component" />
+                                                                                                          <span className="block-component" />
                                                                                                         </span>
                                                                                                       </span>
                                                                                                     </span>
@@ -9480,7 +9471,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                       }}
                                                                                                     >
                                                                                                       <span data-custom-class="body_text">
-                                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                                        <span className="statement-end-if-in-editor" />
                                                                                                       </span>
                                                                                                     </span>
                                                                                                   </span>
@@ -9546,7 +9537,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                         }}
                                                                                                       >
                                                                                                         <span data-custom-class="body_text">
-                                                                                                          <bdt className="block-component" />
+                                                                                                          <span className="block-component" />
                                                                                                         </span>
                                                                                                       </span>
                                                                                                     </span>
@@ -9615,7 +9606,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                       }}
                                                                                                     >
                                                                                                       <span data-custom-class="body_text">
-                                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                                        <span className="statement-end-if-in-editor" />
                                                                                                       </span>
                                                                                                     </span>
                                                                                                   </span>
@@ -9681,7 +9672,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                         }}
                                                                                                       >
                                                                                                         <span data-custom-class="body_text">
-                                                                                                          <bdt className="block-component" />
+                                                                                                          <span className="block-component" />
                                                                                                         </span>
                                                                                                       </span>
                                                                                                     </span>
@@ -9755,7 +9746,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                       }}
                                                                                                     >
                                                                                                       <span data-custom-class="body_text">
-                                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                                        <span className="statement-end-if-in-editor" />
                                                                                                       </span>
                                                                                                     </span>
                                                                                                   </span>
@@ -9821,7 +9812,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                         }}
                                                                                                       >
                                                                                                         <span data-custom-class="body_text">
-                                                                                                          <bdt className="block-component" />
+                                                                                                          <span className="block-component" />
                                                                                                         </span>
                                                                                                       </span>
                                                                                                     </span>
@@ -9899,7 +9890,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                       }}
                                                                                                     >
                                                                                                       <span data-custom-class="body_text">
-                                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                                        <span className="statement-end-if-in-editor" />
                                                                                                       </span>
                                                                                                     </span>
                                                                                                   </span>
@@ -9965,7 +9956,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                         }}
                                                                                                       >
                                                                                                         <span data-custom-class="body_text">
-                                                                                                          <bdt className="block-component" />
+                                                                                                          <span className="block-component" />
                                                                                                         </span>
                                                                                                       </span>
                                                                                                     </span>
@@ -10037,7 +10028,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                       }}
                                                                                                     >
                                                                                                       <span data-custom-class="body_text">
-                                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                                        <span className="statement-end-if-in-editor" />
                                                                                                       </span>
                                                                                                     </span>
                                                                                                   </span>
@@ -10055,9 +10046,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component">
+                                                                                    <span className="block-component">
                                                                                       <span data-custom-class="body_text" />
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                   </div>
                                                                                   <ul>
                                                                                     <li
@@ -10077,7 +10068,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         collected
                                                                                         about
                                                                                         you.
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -10272,9 +10263,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component">
+                                                                                    <span className="block-component">
                                                                                       <span data-custom-class="body_text" />
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                   </div>
                                                                                   <div
                                                                                     style={{
@@ -10315,9 +10306,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="statement-end-if-in-editor">
+                                                                                    <span className="statement-end-if-in-editor">
                                                                                       <span data-custom-class="body_text" />
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                   </div>
                                                                                   <div
                                                                                     style={{
@@ -10473,9 +10464,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                           communication
                                                                                           method
                                                                                           (e.g.
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           ,
-                                                                                          <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                          <span className="statement-end-if-in-editor" />{" "}
                                                                                           phone
                                                                                           or
                                                                                           email)
@@ -10712,7 +10703,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                         }}
                                                                                                       >
                                                                                                         <span data-custom-class="body_text">
-                                                                                                          <bdt className="block-component" />
+                                                                                                          <span className="block-component" />
                                                                                                         </span>
                                                                                                       </span>
                                                                                                     </span>
@@ -10796,7 +10787,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                             }}
                                                                                                           >
                                                                                                             <span data-custom-class="body_text">
-                                                                                                              <bdt className="statement-end-if-in-editor" />
+                                                                                                              <span className="statement-end-if-in-editor" />
                                                                                                             </span>
                                                                                                           </span>
                                                                                                         </span>
@@ -10865,7 +10856,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                         }}
                                                                                                       >
                                                                                                         <span data-custom-class="body_text">
-                                                                                                          <bdt className="block-component" />
+                                                                                                          <span className="block-component" />
                                                                                                         </span>
                                                                                                       </span>
                                                                                                     </span>
@@ -10964,7 +10955,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                             }}
                                                                                                           >
                                                                                                             <span data-custom-class="body_text">
-                                                                                                              <bdt className="statement-end-if-in-editor" />
+                                                                                                              <span className="statement-end-if-in-editor" />
                                                                                                             </span>
                                                                                                           </span>
                                                                                                         </span>
@@ -11033,7 +11024,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                         }}
                                                                                                       >
                                                                                                         <span data-custom-class="body_text">
-                                                                                                          <bdt className="block-component" />
+                                                                                                          <span className="block-component" />
                                                                                                         </span>
                                                                                                       </span>
                                                                                                     </span>
@@ -11072,9 +11063,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                             can
                                                                                             designate
                                                                                             an{" "}
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="block-component" />
                                                                                             authorized
-                                                                                            <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                            <span className="statement-end-if-in-editor" />{" "}
                                                                                             agent
                                                                                             to
                                                                                             make
@@ -11093,9 +11084,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                             request
                                                                                             from
                                                                                             an{" "}
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="block-component" />
                                                                                             authorized
-                                                                                            <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                            <span className="statement-end-if-in-editor" />{" "}
                                                                                             agent
                                                                                             that
                                                                                             does
@@ -11107,9 +11098,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                             have
                                                                                             been
                                                                                             validly{" "}
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="block-component" />
                                                                                             authorized
-                                                                                            <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                            <span className="statement-end-if-in-editor" />{" "}
                                                                                             to
                                                                                             act
                                                                                             on
@@ -11159,7 +11150,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                             }}
                                                                                                           >
                                                                                                             <span data-custom-class="body_text">
-                                                                                                              <bdt className="statement-end-if-in-editor" />
+                                                                                                              <span className="statement-end-if-in-editor" />
                                                                                                             </span>
                                                                                                           </span>
                                                                                                         </span>
@@ -11228,7 +11219,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                         }}
                                                                                                       >
                                                                                                         <span data-custom-class="body_text">
-                                                                                                          <bdt className="block-component" />
+                                                                                                          <span className="block-component" />
                                                                                                         </span>
                                                                                                       </span>
                                                                                                     </span>
@@ -11350,7 +11341,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                             }}
                                                                                                           >
                                                                                                             <span data-custom-class="body_text">
-                                                                                                              <bdt className="statement-end-if-in-editor" />
+                                                                                                              <span className="statement-end-if-in-editor" />
                                                                                                             </span>
                                                                                                           </span>
                                                                                                         </span>
@@ -11371,13 +11362,13 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component">
+                                                                                    <span className="block-component">
                                                                                       <span
                                                                                         style={{
                                                                                           fontSize: 15,
                                                                                         }}
                                                                                       />
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                   </div>
                                                                                   <div
                                                                                     style={{
@@ -11408,7 +11399,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           can
                                                                                           contact
                                                                                           us{" "}
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           by
                                                                                           submitting
                                                                                           a&nbsp;
@@ -11458,7 +11449,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                       >
                                                                                         <span data-custom-class="body_text">
                                                                                           ,{" "}
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                         </span>
                                                                                         <span
                                                                                           style={{
@@ -11476,23 +11467,23 @@ const TruthPrivacy: React.FC = () => {
                                                                                               }}
                                                                                             >
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                                 by
                                                                                                 email
                                                                                                 at{" "}
-                                                                                                <bdt className="question">
+                                                                                                <span className="question">
                                                                                                   gaugerderek@gmail.com
-                                                                                                </bdt>
+                                                                                                </span>
 
                                                                                                 ,{" "}
-                                                                                                <bdt className="statement-end-if-in-editor" />
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="statement-end-if-in-editor" />
+                                                                                                <span className="block-component" />
                                                                                               </span>
                                                                                               <span data-custom-class="body_text">
-                                                                                                <bdt className="block-component" />
-                                                                                                <bdt className="block-component">
+                                                                                                <span className="block-component" />
+                                                                                                <span className="block-component">
                                                                                                   <span data-custom-class="body_text" />
-                                                                                                </bdt>
+                                                                                                </span>
                                                                                               </span>
                                                                                             </span>
                                                                                           </span>
@@ -11540,9 +11531,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                       }}
                                                                                     >
                                                                                       <span data-custom-class="body_text">
-                                                                                        <bdt className="block-component">
-                                                                                          <bdt className="block-component" />
-                                                                                        </bdt>
+                                                                                        <span className="block-component">
+                                                                                          <span className="block-component" />
+                                                                                        </span>
                                                                                       </span>
                                                                                     </span>
                                                                                   </div>
@@ -11552,13 +11543,13 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component">
+                                                                                    <span className="block-component">
                                                                                       <span
                                                                                         style={{
                                                                                           fontSize: 15,
                                                                                         }}
                                                                                       />
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                   </div>
                                                                                   <div
                                                                                     style={{
@@ -11658,7 +11649,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         by
                                                                                         law.
                                                                                       </span>
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -11688,7 +11679,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -11703,7 +11694,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -11726,7 +11717,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -11736,7 +11727,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
                                                                                   </div>
                                                                                   <ul>
                                                                                     <li
@@ -11761,7 +11752,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           data
                                                                                         </span>
                                                                                       </span>
-                                                                                      <bdt className="statement-end-if-in-editor" />
+                                                                                      <span className="statement-end-if-in-editor" />
                                                                                     </li>
                                                                                   </ul>
                                                                                   <div
@@ -11770,7 +11761,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
                                                                                   </div>
                                                                                   <ul>
                                                                                     <li
@@ -11795,7 +11786,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           data
                                                                                         </span>
                                                                                       </span>
-                                                                                      <bdt className="statement-end-if-in-editor" />
+                                                                                      <span className="statement-end-if-in-editor" />
                                                                                     </li>
                                                                                   </ul>
                                                                                   <div
@@ -11809,7 +11800,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -11840,7 +11831,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           with
                                                                                           us
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -11850,7 +11841,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
                                                                                   </div>
                                                                                   <ul>
                                                                                     <li
@@ -11902,14 +11893,14 @@ const TruthPrivacy: React.FC = () => {
                                                                                           significant
                                                                                           effects
                                                                                           (
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           "profiling"
-                                                                                          <bdt className="statement-end-if-in-editor" />
+                                                                                          <span className="statement-end-if-in-editor" />
 
                                                                                           )
                                                                                         </span>
                                                                                       </span>
-                                                                                      <bdt className="statement-end-if-in-editor" />
+                                                                                      <span className="statement-end-if-in-editor" />
                                                                                     </li>
                                                                                   </ul>
                                                                                   <div
@@ -11919,9 +11910,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component">
+                                                                                    <span className="block-component">
                                                                                       <span data-custom-class="body_text" />
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                     <span
                                                                                       style={{
                                                                                         fontSize: 15,
@@ -11934,7 +11925,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                       to
                                                                                       exercise
                                                                                     </span>{" "}
-                                                                                    <bdt
+                                                                                    <span
                                                                                       className="block-component"
                                                                                       style={{
                                                                                         fontSize: 15,
@@ -11947,7 +11938,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                     >
                                                                                       these
                                                                                     </span>{" "}
-                                                                                    <bdt
+                                                                                    <span
                                                                                       className="statement-end-if-in-editor"
                                                                                       style={{
                                                                                         fontSize: 15,
@@ -11962,17 +11953,17 @@ const TruthPrivacy: React.FC = () => {
                                                                                       described
                                                                                       above,
                                                                                       please{" "}
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                       email
                                                                                     </span>{" "}
-                                                                                    <bdt
+                                                                                    <span
                                                                                       className="question"
                                                                                       style={{
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
                                                                                       gaugerderek@gmail.com
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                     <span
                                                                                       style={{
                                                                                         fontSize: 15,
@@ -11980,7 +11971,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                     >
                                                                                       &nbsp;or&nbsp;
                                                                                     </span>
-                                                                                    <bdt
+                                                                                    <span
                                                                                       className="block-component"
                                                                                       style={{
                                                                                         fontSize: 15,
@@ -12015,7 +12006,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         </span>
                                                                                       </span>
                                                                                     </a>
-                                                                                    <bdt
+                                                                                    <span
                                                                                       className="block-component"
                                                                                       style={{
                                                                                         fontSize: 15,
@@ -12071,11 +12062,11 @@ const TruthPrivacy: React.FC = () => {
                                                                                         email
                                                                                         us
                                                                                         at{" "}
-                                                                                        <bdt className="block-component" />
-                                                                                        <bdt className="question">
+                                                                                        <span className="block-component" />
+                                                                                        <span className="question">
                                                                                           gaugerderek@gmail.com
-                                                                                        </bdt>
-                                                                                        <bdt className="else-block" />
+                                                                                        </span>
+                                                                                        <span className="else-block" />
 
                                                                                         .
                                                                                         Within
@@ -12116,7 +12107,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         the
                                                                                         decisions.
                                                                                       </span>
-                                                                                      <bdt className="statement-end-if-in-editor" />
+                                                                                      <span className="statement-end-if-in-editor" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <div
@@ -12125,7 +12116,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
                                                                                   </div>
                                                                                   <div
                                                                                     style={{
@@ -12220,7 +12211,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         by
                                                                                         law.
                                                                                       </span>
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -12250,7 +12241,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -12260,7 +12251,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
                                                                                   </div>
                                                                                   <ul>
                                                                                     <li
@@ -12277,7 +12268,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         personal
                                                                                         data
                                                                                       </span>
-                                                                                      <bdt className="statement-end-if-in-editor" />
+                                                                                      <span className="statement-end-if-in-editor" />
                                                                                     </li>
                                                                                   </ul>
                                                                                   <div
@@ -12291,7 +12282,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -12316,7 +12307,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -12326,7 +12317,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
                                                                                   </div>
                                                                                   <ul>
                                                                                     <li
@@ -12351,7 +12342,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           data
                                                                                         </span>
                                                                                       </span>
-                                                                                      <bdt className="statement-end-if-in-editor" />
+                                                                                      <span className="statement-end-if-in-editor" />
                                                                                     </li>
                                                                                   </ul>
                                                                                   <div
@@ -12365,7 +12356,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -12396,7 +12387,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           with
                                                                                           us
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -12406,7 +12397,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
                                                                                   </div>
                                                                                   <ul>
                                                                                     <li
@@ -12458,14 +12449,14 @@ const TruthPrivacy: React.FC = () => {
                                                                                           significant
                                                                                           effects
                                                                                           (
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           "profiling"
-                                                                                          <bdt className="statement-end-if-in-editor" />
+                                                                                          <span className="statement-end-if-in-editor" />
 
                                                                                           )
                                                                                         </span>
                                                                                       </span>
-                                                                                      <bdt className="statement-end-if-in-editor" />
+                                                                                      <span className="statement-end-if-in-editor" />
                                                                                     </li>
                                                                                   </ul>
                                                                                   <div
@@ -12475,7 +12466,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         "1.5",
                                                                                     }}
                                                                                   >
-                                                                                    <bdt className="block-component">
+                                                                                    <span className="block-component">
                                                                                       <span
                                                                                         style={{
                                                                                           fontSize: 15,
@@ -12483,27 +12474,27 @@ const TruthPrivacy: React.FC = () => {
                                                                                       >
                                                                                         <span data-custom-class="body_text" />
                                                                                       </span>
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                     To
                                                                                     submit
                                                                                     a
                                                                                     request
                                                                                     to
                                                                                     exercise{" "}
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
                                                                                     these
-                                                                                    <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                    <span className="statement-end-if-in-editor" />{" "}
                                                                                     rights
                                                                                     described
                                                                                     above,
                                                                                     please{" "}
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
                                                                                     email{" "}
-                                                                                    <bdt className="question">
+                                                                                    <span className="question">
                                                                                       gaugerderek@gmail.com
-                                                                                    </bdt>{" "}
+                                                                                    </span>{" "}
                                                                                     or{" "}
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
                                                                                     submit
                                                                                     a{" "}
                                                                                     <a
@@ -12526,7 +12517,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         </span>
                                                                                       </span>
                                                                                     </a>
-                                                                                    <bdt className="block-component" />
+                                                                                    <span className="block-component" />
 
                                                                                     .
                                                                                   </div>
@@ -12570,11 +12561,11 @@ const TruthPrivacy: React.FC = () => {
                                                                                         email
                                                                                         us
                                                                                         at{" "}
-                                                                                        <bdt className="block-component" />
-                                                                                        <bdt className="question">
+                                                                                        <span className="block-component" />
+                                                                                        <span className="question">
                                                                                           gaugerderek@gmail.com
-                                                                                        </bdt>
-                                                                                        <bdt className="else-block" />
+                                                                                        </span>
+                                                                                        <span className="else-block" />
 
                                                                                         .
                                                                                         Within
@@ -12616,14 +12607,14 @@ const TruthPrivacy: React.FC = () => {
                                                                                         decisions.
                                                                                       </span>
                                                                                     </span>
-                                                                                    <bdt className="statement-end-if-in-editor" />
-                                                                                    <bdt className="block-component">
+                                                                                    <span className="statement-end-if-in-editor" />
+                                                                                    <span className="block-component">
                                                                                       <span
                                                                                         style={{
                                                                                           fontSize: 15,
                                                                                         }}
                                                                                       />
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                   </div>
                                                                                   <div
                                                                                     style={{
@@ -12724,7 +12715,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         by
                                                                                         law.
                                                                                       </span>
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -12754,7 +12745,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -12769,7 +12760,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -12792,7 +12783,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -12807,7 +12798,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -12832,7 +12823,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -12847,7 +12838,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -12878,7 +12869,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           with
                                                                                           us
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -12893,7 +12884,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -12934,7 +12925,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -12950,29 +12941,29 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component">
+                                                                                      <span className="block-component">
                                                                                         <span data-custom-class="body_text" />
-                                                                                      </bdt>
+                                                                                      </span>
                                                                                       To
                                                                                       submit
                                                                                       a
                                                                                       request
                                                                                       to
                                                                                       exercise{" "}
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                       these
-                                                                                      <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                      <span className="statement-end-if-in-editor" />{" "}
                                                                                       rights
                                                                                       described
                                                                                       above,
                                                                                       please{" "}
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                       email{" "}
-                                                                                      <bdt className="question">
+                                                                                      <span className="question">
                                                                                         gaugerderek@gmail.com
-                                                                                      </bdt>{" "}
+                                                                                      </span>{" "}
                                                                                       or{" "}
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                       submit
                                                                                       a{" "}
                                                                                       <a
@@ -12993,24 +12984,24 @@ const TruthPrivacy: React.FC = () => {
                                                                                           request
                                                                                         </span>
                                                                                       </a>
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
 
                                                                                       .
                                                                                     </span>
-                                                                                    <bdt className="statement-end-if-in-editor">
+                                                                                    <span className="statement-end-if-in-editor">
                                                                                       <span
                                                                                         style={{
                                                                                           fontSize: 15,
                                                                                         }}
                                                                                       />
-                                                                                    </bdt>
-                                                                                    <bdt className="block-component">
+                                                                                    </span>
+                                                                                    <span className="block-component">
                                                                                       <span
                                                                                         style={{
                                                                                           fontSize: 15,
                                                                                         }}
                                                                                       />
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                   </div>
                                                                                   <div
                                                                                     style={{
@@ -13108,11 +13099,11 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component">
+                                                                                      <span className="block-component">
                                                                                         <span data-custom-class="body_text" />
-                                                                                      </bdt>
+                                                                                      </span>
                                                                                       "Consumer"
-                                                                                      <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                      <span className="statement-end-if-in-editor" />{" "}
                                                                                       means
                                                                                       a
                                                                                       natural
@@ -13174,12 +13165,12 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component">
+                                                                                      <span className="block-component">
                                                                                         <span data-custom-class="body_text" />
-                                                                                      </bdt>
+                                                                                      </span>
                                                                                       "Personal
                                                                                       data"
-                                                                                      <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                      <span className="statement-end-if-in-editor" />{" "}
                                                                                       means
                                                                                       any
                                                                                       information
@@ -13196,10 +13187,10 @@ const TruthPrivacy: React.FC = () => {
                                                                                       identifiable
                                                                                       natural
                                                                                       person.{" "}
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                       "Personal
                                                                                       data"
-                                                                                      <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                      <span className="statement-end-if-in-editor" />{" "}
                                                                                       does
                                                                                       not
                                                                                       include
@@ -13237,14 +13228,14 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component">
+                                                                                      <span className="block-component">
                                                                                         <span data-custom-class="body_text" />
-                                                                                      </bdt>
+                                                                                      </span>
                                                                                       "Sale
                                                                                       of
                                                                                       personal
                                                                                       data"
-                                                                                      <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                      <span className="statement-end-if-in-editor" />{" "}
                                                                                       means
                                                                                       the
                                                                                       exchange
@@ -13286,9 +13277,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         this
                                                                                         definition
                                                                                         of{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         "consumer"
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         applies
                                                                                         to
                                                                                         you,
@@ -13351,7 +13342,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -13381,7 +13372,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -13396,7 +13387,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -13419,7 +13410,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -13434,7 +13425,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -13459,7 +13450,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -13474,7 +13465,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -13499,7 +13490,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           personal
                                                                                           data
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -13514,7 +13505,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -13545,7 +13536,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           with
                                                                                           us
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -13560,7 +13551,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -13613,13 +13604,13 @@ const TruthPrivacy: React.FC = () => {
                                                                                           significant
                                                                                           effects
                                                                                           (
-                                                                                          <bdt className="block-component" />
+                                                                                          <span className="block-component" />
                                                                                           "profiling"
-                                                                                          <bdt className="statement-end-if-in-editor" />
+                                                                                          <span className="statement-end-if-in-editor" />
 
                                                                                           )
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -13634,7 +13625,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <div
@@ -13687,21 +13678,21 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                       <span data-custom-class="body_text">
                                                                                         You
                                                                                         may{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         contact
                                                                                         us
                                                                                         by
                                                                                         email
                                                                                         at{" "}
-                                                                                        <bdt className="question">
+                                                                                        <span className="question">
                                                                                           gaugerderek@gmail.com
-                                                                                        </bdt>{" "}
+                                                                                        </span>{" "}
                                                                                         or{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         submit
                                                                                         a{" "}
                                                                                         <a
@@ -13724,7 +13715,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                             </span>
                                                                                           </span>
                                                                                         </a>
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
 
                                                                                         .
                                                                                       </span>
@@ -13761,9 +13752,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         are
                                                                                         using
                                                                                         an{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         authorized
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         agent
                                                                                         to
                                                                                         exercise
@@ -13776,9 +13767,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         request
                                                                                         if
                                                                                         the{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         authorized
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         agent
                                                                                         does
                                                                                         not
@@ -13789,9 +13780,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         have
                                                                                         been
                                                                                         validly{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         authorized
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         to
                                                                                         act
                                                                                         on
@@ -13878,9 +13869,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                         request
                                                                                         through
                                                                                         an{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         authorized
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         agent,
                                                                                         we
                                                                                         may
@@ -14070,11 +14061,11 @@ const TruthPrivacy: React.FC = () => {
                                                                                         email
                                                                                         us
                                                                                         at{" "}
-                                                                                        <bdt className="block-component" />
-                                                                                        <bdt className="question">
+                                                                                        <span className="block-component" />
+                                                                                        <span className="question">
                                                                                           gaugerderek@gmail.com
-                                                                                        </bdt>
-                                                                                        <bdt className="else-block" />
+                                                                                        </span>
+                                                                                        <span className="else-block" />
 
                                                                                         .
                                                                                         Within
@@ -14149,7 +14140,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         .
                                                                                       </span>
                                                                                     </span>
-                                                                                    <bdt className="statement-end-if-in-editor" />
+                                                                                    <span className="statement-end-if-in-editor" />
                                                                                     <span
                                                                                       style={{
                                                                                         fontSize: 15,
@@ -14196,7 +14187,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                       }}
                                                                                                     >
                                                                                                       <span data-custom-class="body_text">
-                                                                                                        <bdt className="statement-end-if-in-editor">
+                                                                                                        <span className="statement-end-if-in-editor">
                                                                                                           <span data-custom-class="body_text">
                                                                                                             <span
                                                                                                               style={{
@@ -14244,9 +14235,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                                                               }}
                                                                                                                             >
                                                                                                                               <span data-custom-class="body_text">
-                                                                                                                                <bdt className="statement-end-if-in-editor">
-                                                                                                                                  <bdt className="statement-end-if-in-editor" />
-                                                                                                                                </bdt>
+                                                                                                                                <span className="statement-end-if-in-editor">
+                                                                                                                                  <span className="statement-end-if-in-editor" />
+                                                                                                                                </span>
                                                                                                                               </span>
                                                                                                                             </span>
                                                                                                                           </span>
@@ -14258,7 +14249,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                               </span>
                                                                                                             </span>
                                                                                                           </span>
-                                                                                                        </bdt>
+                                                                                                        </span>
                                                                                                       </span>
                                                                                                     </span>
                                                                                                   </span>
@@ -14269,13 +14260,13 @@ const TruthPrivacy: React.FC = () => {
                                                                                         </span>
                                                                                       </span>
                                                                                     </span>
-                                                                                    <bdt className="block-component">
+                                                                                    <span className="block-component">
                                                                                       <span
                                                                                         style={{
                                                                                           fontSize: 15,
                                                                                         }}
                                                                                       />
-                                                                                    </bdt>
+                                                                                    </span>
                                                                                   </div>
                                                                                   <div
                                                                                     style={{
@@ -14364,7 +14355,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           in.
                                                                                         </span>
                                                                                       </em>
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <div
@@ -14392,28 +14383,28 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component">
+                                                                                      <span className="block-component">
                                                                                         <span data-custom-class="heading_2" />
-                                                                                      </bdt>
+                                                                                      </span>
                                                                                       <span data-custom-class="heading_2">
                                                                                         <strong>
                                                                                           Australia
                                                                                         </strong>
-                                                                                        <bdt className="statement-end-if-in-editor" />
-                                                                                        <bdt className="block-component" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />
+                                                                                        <span className="block-component" />{" "}
                                                                                         <strong>
                                                                                           and
                                                                                         </strong>{" "}
-                                                                                        <bdt className="statement-end-if-in-editor" />
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="statement-end-if-in-editor" />
+                                                                                        <span className="block-component" />
                                                                                         <strong>
                                                                                           New
                                                                                           Zealand
                                                                                         </strong>
                                                                                       </span>
-                                                                                      <bdt className="statement-end-if-in-editor">
+                                                                                      <span className="statement-end-if-in-editor">
                                                                                         <span data-custom-class="heading_2" />
-                                                                                      </bdt>
+                                                                                      </span>
                                                                                     </span>
                                                                                   </div>
                                                                                   <div
@@ -14456,22 +14447,22 @@ const TruthPrivacy: React.FC = () => {
                                                                                         conditions
                                                                                         set
                                                                                         by{" "}
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                         Australia's
                                                                                         Privacy
                                                                                         Act
                                                                                         1988
-                                                                                        <bdt className="statement-end-if-in-editor" />
-                                                                                        <bdt className="block-component" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />
+                                                                                        <span className="block-component" />{" "}
                                                                                         and{" "}
-                                                                                        <bdt className="statement-end-if-in-editor" />
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="statement-end-if-in-editor" />
+                                                                                        <span className="block-component" />
                                                                                         New
                                                                                         Zealand's
                                                                                         Privacy
                                                                                         Act
                                                                                         2020
-                                                                                        <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                        <span className="statement-end-if-in-editor" />{" "}
                                                                                         (Privacy
                                                                                         Act).
                                                                                       </span>
@@ -14512,11 +14503,11 @@ const TruthPrivacy: React.FC = () => {
                                                                                         requirements
                                                                                         defined
                                                                                         in
-                                                                                        <bdt className="block-component" />{" "}
+                                                                                        <span className="block-component" />{" "}
                                                                                         both
                                                                                         Privacy
                                                                                         Acts
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
 
                                                                                         ,
                                                                                         in
@@ -14611,7 +14602,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -14637,7 +14628,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           you
                                                                                           want
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -14652,7 +14643,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                   </div>
                                                                                   <ul>
@@ -14676,7 +14667,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           your
                                                                                           requests
                                                                                         </span>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                       </span>
                                                                                     </li>
                                                                                   </ul>
@@ -14691,7 +14682,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                         fontSize: 15,
                                                                                       }}
                                                                                     >
-                                                                                      <bdt className="block-component" />
+                                                                                      <span className="block-component" />
                                                                                     </span>
                                                                                     <div
                                                                                       style={{
@@ -14704,7 +14695,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                           fontSize: 15,
                                                                                         }}
                                                                                       >
-                                                                                        <bdt className="block-component" />
+                                                                                        <span className="block-component" />
                                                                                       </span>
                                                                                       <div
                                                                                         style={{
@@ -14753,9 +14744,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                             in
                                                                                             the
                                                                                             section{" "}
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="block-component" />
                                                                                             "
-                                                                                            <bdt className="statement-end-if-in-editor" />
+                                                                                            <span className="statement-end-if-in-editor" />
                                                                                             <a
                                                                                               data-custom-class="link"
                                                                                               href="#request"
@@ -14783,13 +14774,13 @@ const TruthPrivacy: React.FC = () => {
                                                                                                 </span>
                                                                                               </span>
                                                                                             </a>
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="block-component" />
 
                                                                                             "
                                                                                           </span>
-                                                                                          <bdt className="statement-end-if-in-editor">
+                                                                                          <span className="statement-end-if-in-editor">
                                                                                             <span data-custom-class="body_text" />
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </span>
                                                                                       </div>
                                                                                       <div
@@ -14838,7 +14829,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                             a
                                                                                             complaint
                                                                                             about{" "}
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="block-component" />
 
                                                                                             a
                                                                                             breach
@@ -14871,11 +14862,11 @@ const TruthPrivacy: React.FC = () => {
                                                                                                 </span>
                                                                                               </span>
                                                                                             </a>
-                                                                                            <bdt className="statement-end-if-in-editor" />
-                                                                                            <bdt className="block-component" />{" "}
+                                                                                            <span className="statement-end-if-in-editor" />
+                                                                                            <span className="block-component" />{" "}
                                                                                             and{" "}
-                                                                                            <bdt className="statement-end-if-in-editor" />
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="statement-end-if-in-editor" />
+                                                                                            <span className="block-component" />
 
                                                                                             a
                                                                                             breach
@@ -14908,19 +14899,19 @@ const TruthPrivacy: React.FC = () => {
                                                                                                 </span>
                                                                                               </span>
                                                                                             </a>
-                                                                                            <bdt className="statement-end-if-in-editor" />
+                                                                                            <span className="statement-end-if-in-editor" />
 
                                                                                             .
                                                                                           </span>
-                                                                                          <bdt className="statement-end-if-in-editor" />
+                                                                                          <span className="statement-end-if-in-editor" />
                                                                                         </span>
-                                                                                        <bdt className="block-component">
+                                                                                        <span className="block-component">
                                                                                           <span
                                                                                             style={{
                                                                                               fontSize: 15,
                                                                                             }}
                                                                                           />
-                                                                                        </bdt>
+                                                                                        </span>
                                                                                       </div>
                                                                                       <div
                                                                                         style={{
@@ -15018,9 +15009,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                             in
                                                                                             the
                                                                                             section{" "}
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="block-component" />
                                                                                             "
-                                                                                            <bdt className="statement-end-if-in-editor" />
+                                                                                            <span className="statement-end-if-in-editor" />
                                                                                           </span>
                                                                                         </span>
                                                                                         <span data-custom-class="link">
@@ -15056,13 +15047,13 @@ const TruthPrivacy: React.FC = () => {
                                                                                           }}
                                                                                         >
                                                                                           <span data-custom-class="body_text">
-                                                                                            <bdt className="block-component" />
+                                                                                            <span className="block-component" />
 
                                                                                             "
                                                                                           </span>
-                                                                                          <bdt className="statement-end-if-in-editor">
+                                                                                          <span className="statement-end-if-in-editor">
                                                                                             <span data-custom-class="body_text" />
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </span>
                                                                                       </div>
                                                                                       <div
@@ -15277,16 +15268,16 @@ const TruthPrivacy: React.FC = () => {
                                                                                             fontSize: 15,
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="statement-end-if-in-editor" />
-                                                                                          <bdt className="statement-end-if-in-editor" />
+                                                                                          <span className="statement-end-if-in-editor" />
+                                                                                          <span className="statement-end-if-in-editor" />
                                                                                         </span>
-                                                                                        <bdt className="block-component">
+                                                                                        <span className="block-component">
                                                                                           <span
                                                                                             style={{
                                                                                               fontSize: 15,
                                                                                             }}
                                                                                           />
-                                                                                        </bdt>
+                                                                                        </span>
                                                                                       </div>
                                                                                       <div
                                                                                         style={{
@@ -15456,9 +15447,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                               by
                                                                                               an
                                                                                               updated{" "}
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                               "Revised"
-                                                                                              <bdt className="statement-end-if-in-editor" />{" "}
+                                                                                              <span className="statement-end-if-in-editor" />{" "}
                                                                                               date
                                                                                               and
                                                                                               the
@@ -15641,19 +15632,19 @@ const TruthPrivacy: React.FC = () => {
                                                                                                 }}
                                                                                               >
                                                                                                 <span data-custom-class="body_text">
-                                                                                                  <bdt className="block-component">
-                                                                                                    <bdt className="block-component" />
-                                                                                                  </bdt>
+                                                                                                  <span className="block-component">
+                                                                                                    <span className="block-component" />
+                                                                                                  </span>
                                                                                                   email
                                                                                                   us
                                                                                                   at{" "}
-                                                                                                  <bdt className="question">
+                                                                                                  <span className="question">
                                                                                                     gaugerderek@gmail.com
                                                                                                     or&nbsp;
-                                                                                                  </bdt>
-                                                                                                  <bdt className="statement-end-if-in-editor">
-                                                                                                    <bdt className="block-component" />
-                                                                                                  </bdt>
+                                                                                                  </span>
+                                                                                                  <span className="statement-end-if-in-editor">
+                                                                                                    <span className="block-component" />
+                                                                                                  </span>
                                                                                                 </span>
                                                                                               </span>
                                                                                               <span
@@ -15730,9 +15721,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                                     }}
                                                                                                   >
                                                                                                     <span data-custom-class="body_text">
-                                                                                                      <bdt className="question">
+                                                                                                      <span className="question">
                                                                                                         Truth
-                                                                                                      </bdt>
+                                                                                                      </span>
                                                                                                     </span>
                                                                                                   </span>
                                                                                                 </span>
@@ -15746,7 +15737,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                 }}
                                                                                               >
                                                                                                 <span data-custom-class="body_text">
-                                                                                                  <bdt className="block-component" />
+                                                                                                  <span className="block-component" />
                                                                                                 </span>
                                                                                               </span>
                                                                                             </span>
@@ -15765,9 +15756,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                           }}
                                                                                         >
                                                                                           <span data-custom-class="body_text">
-                                                                                            <bdt className="question">
+                                                                                            <span className="question">
                                                                                               __________
-                                                                                            </bdt>
+                                                                                            </span>
                                                                                             <span
                                                                                               style={{
                                                                                                 color:
@@ -15779,7 +15770,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                   fontSize: 15,
                                                                                                 }}
                                                                                               >
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                               </span>
                                                                                             </span>
                                                                                           </span>
@@ -15797,9 +15788,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                           }}
                                                                                         >
                                                                                           <span data-custom-class="body_text">
-                                                                                            <bdt className="question">
+                                                                                            <span className="question">
                                                                                               Milwaukee
-                                                                                            </bdt>
+                                                                                            </span>
                                                                                             <span
                                                                                               style={{
                                                                                                 color:
@@ -15811,23 +15802,23 @@ const TruthPrivacy: React.FC = () => {
                                                                                                   fontSize: 15,
                                                                                                 }}
                                                                                               >
-                                                                                                <bdt className="block-component" />
-                                                                                                <bdt className="block-component" />
+                                                                                                <span className="block-component" />
+                                                                                                <span className="block-component" />
 
                                                                                                 ,{" "}
-                                                                                                <bdt className="question">
+                                                                                                <span className="question">
                                                                                                   WI
-                                                                                                </bdt>
-                                                                                                <bdt className="statement-end-if-in-editor" />
-                                                                                                <bdt className="block-component" />
-                                                                                                <bdt className="block-component" />{" "}
-                                                                                                <bdt className="question">
+                                                                                                </span>
+                                                                                                <span className="statement-end-if-in-editor" />
+                                                                                                <span className="block-component" />
+                                                                                                <span className="block-component" />{" "}
+                                                                                                <span className="question">
                                                                                                   53121
-                                                                                                </bdt>
-                                                                                                <bdt className="statement-end-if-in-editor" />
-                                                                                                <bdt className="block-component" />
-                                                                                                <bdt className="block-component" />
-                                                                                                <bdt className="block-component" />
+                                                                                                </span>
+                                                                                                <span className="statement-end-if-in-editor" />
+                                                                                                <span className="block-component" />
+                                                                                                <span className="block-component" />
+                                                                                                <span className="block-component" />
                                                                                               </span>
                                                                                             </span>
                                                                                           </span>
@@ -15845,7 +15836,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                             fontSize: 15,
                                                                                           }}
                                                                                         >
-                                                                                          <bdt className="question">
+                                                                                          <span className="question">
                                                                                             United
                                                                                             States
                                                                                             <span data-custom-class="body_text">
@@ -15884,7 +15875,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                                 fontSize: 15,
                                                                                                               }}
                                                                                                             >
-                                                                                                              <bdt className="statement-end-if-in-editor" />
+                                                                                                              <span className="statement-end-if-in-editor" />
                                                                                                             </span>
                                                                                                           </span>
                                                                                                         </span>
@@ -15894,9 +15885,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                                 </span>
                                                                                               </span>
                                                                                             </span>
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                         </span>
-                                                                                        <bdt className="block-component">
+                                                                                        <span className="block-component">
                                                                                           <span
                                                                                             style={{
                                                                                               fontSize: 15,
@@ -15904,8 +15895,8 @@ const TruthPrivacy: React.FC = () => {
                                                                                           >
                                                                                             <span data-custom-class="body_text" />
                                                                                           </span>
-                                                                                        </bdt>
-                                                                                        <bdt className="statement-end-if-in-editor" />
+                                                                                        </span>
+                                                                                        <span className="statement-end-if-in-editor" />
                                                                                         <span data-custom-class="body_text">
                                                                                           <span
                                                                                             style={{
@@ -15918,7 +15909,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                 fontSize: 15,
                                                                                               }}
                                                                                             >
-                                                                                              <bdt className="statement-end-if-in-editor" />
+                                                                                              <span className="statement-end-if-in-editor" />
                                                                                             </span>
                                                                                           </span>
                                                                                         </span>
@@ -15935,7 +15926,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                                     "rgb(89, 89, 89)",
                                                                                                 }}
                                                                                               >
-                                                                                                <bdt className="statement-end-if-in-editor">
+                                                                                                <span className="statement-end-if-in-editor">
                                                                                                   <span
                                                                                                     style={{
                                                                                                       color:
@@ -15948,23 +15939,23 @@ const TruthPrivacy: React.FC = () => {
                                                                                                       }}
                                                                                                     >
                                                                                                       <span data-custom-class="body_text">
-                                                                                                        <bdt className="block-component">
-                                                                                                          <bdt className="block-component" />
-                                                                                                        </bdt>
+                                                                                                        <span className="block-component">
+                                                                                                          <span className="block-component" />
+                                                                                                        </span>
                                                                                                       </span>
                                                                                                     </span>
                                                                                                   </span>
-                                                                                                </bdt>
+                                                                                                </span>
                                                                                               </span>
                                                                                             </span>
                                                                                           </span>
-                                                                                          <bdt className="block-component">
+                                                                                          <span className="block-component">
                                                                                             <span
                                                                                               style={{
                                                                                                 fontSize: 15,
                                                                                               }}
                                                                                             />
-                                                                                          </bdt>
+                                                                                          </span>
                                                                                           <span
                                                                                             style={{
                                                                                               fontSize: 15,
@@ -15984,9 +15975,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                                   }}
                                                                                                 >
                                                                                                   <span data-custom-class="body_text">
-                                                                                                    <bdt className="statement-end-if-in-editor">
-                                                                                                      <bdt className="block-component" />
-                                                                                                    </bdt>
+                                                                                                    <span className="statement-end-if-in-editor">
+                                                                                                      <span className="block-component" />
+                                                                                                    </span>
                                                                                                   </span>
                                                                                                 </span>
                                                                                               </span>
@@ -16096,7 +16087,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                             }}
                                                                                           >
                                                                                             <span data-custom-class="body_text">
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                               You
                                                                                               have
                                                                                               the
@@ -16118,7 +16109,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                               or
                                                                                               delete
                                                                                               it.{" "}
-                                                                                              <bdt className="statement-end-if-in-editor" />
+                                                                                              <span className="statement-end-if-in-editor" />
                                                                                               To
                                                                                               request
                                                                                               to
@@ -16130,7 +16121,7 @@ const TruthPrivacy: React.FC = () => {
                                                                                               personal
                                                                                               information,
                                                                                               please{" "}
-                                                                                              <bdt className="block-component" />
+                                                                                              <span className="block-component" />
                                                                                               fill
                                                                                               out
                                                                                               and
@@ -16165,9 +16156,9 @@ const TruthPrivacy: React.FC = () => {
                                                                                                 </span>
                                                                                               </span>
                                                                                             </span>
-                                                                                            <bdt className="block-component">
+                                                                                            <span className="block-component">
                                                                                               <span data-custom-class="body_text" />
-                                                                                            </bdt>
+                                                                                            </span>
                                                                                           </span>
                                                                                         </span>
                                                                                         <span data-custom-class="body_text">
