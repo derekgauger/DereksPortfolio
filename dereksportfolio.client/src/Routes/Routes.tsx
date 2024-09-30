@@ -4,7 +4,7 @@ import Home from "../Pages/Home/Home";
 import ProjectDetails from "../Pages/ProjectDetails/ProjectDetails";
 import Projects from "../Pages/Projects/Projects";
 import Resume from "../Pages/Resume/Resume";
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 import TruthTerms from "../Pages/TruthTerms/TruthTerms";
 import TruthPrivacy from "../Pages/TruthPrivacy/TruthPrivacy";
 
