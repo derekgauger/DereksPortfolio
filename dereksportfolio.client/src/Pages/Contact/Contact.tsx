@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
         <EmailForm/>
       </div>
       <Footer
-        title={"Thank you for checking out my contact page!"}
+        title={"Thank you for visiting!"}
         content={
           <p className="text-sm sm:text-base">
             Well, this is the last page of the website. I appreciate the visit.
